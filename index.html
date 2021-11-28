@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sort-Ed</title>
+  <!-- stylesheet linking  -->
+  <link rel="stylesheet" href="Assets/style/style.css" />
+  <link rel="stylesheet" href="Assets/style/nav-style.css" />
+  <link rel="stylesheet" href="Assets/style/mobile.css">
+</head>
+
+<body>
+  <!-- navbar section -->
+  <header class="header">
+    <a href="#" class="header__logo">Sort-Ed</a>
+
+    <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+    <nav class="nav" id="nav-menu">
+      <div class="nav__content bd-grid">
+        <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+        <div class="nav__perfil">
+          <div class="nav__img">
+            <img src="assets/img/perfil.png" alt="" />
+          </div>
+
+          <div>
+            <a href="#" class="nav__name">Sort-Ed</a>
+            <!-- <span class="nav__profesion">Web designer</span> -->
+          </div>
+        </div>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#hero-page" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#question-answer" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Register</a>
+            </li>
+            <li class="nav__item">
+              <a href="#p" class="nav__link">Blog</a>
+            </li>
+            <!-- <li class="nav__item">
+              <a href="#one" class="nav__link">Contact</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="hero-section" id="hero-section">
+    <div class="hero-container">
+      <div class="text-container">
+        <p>Get Started with your Engineering Education in new way</p>
+        <h1 class="title">
+          GET ALL BOOKS ON<br />
+          SUBSCRIPTION
+        </h1>
+        <h3>
+          Launching <br />
+          <span>Nashik Chapter</span>
+        </h3>
+        <h3>
+          Starting from
+          <span>1,699 /year</span>
+        </h3>
+        <a href="http://">
+          <button><span>Pre-Register now</span></button>
+        </a>
+      </div>
+      <div class="image-container">
+        <img class="css-filter" src="Assets/images/hero section final.svg" alt="" />
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- =========================== video and counter section ==========================  -->
+  <section class="video-counter" id="video-counter">
+    
+    <div class="counter-container">
+      <div class="counter-box">
+        <h2>
+          <span class="count counter" data-target="2000">2000+</span><span class="square"></span>
+        </h2>
+        <p>Registrations</p>
+      </div>
+      <div class="counter-box">
+        <h2>
+          <span class="count counter" data-target="5">5+</span> <span class="square"></span>
+        </h2>
+        <p>Publications</p>
+      </div>
+      <div class="counter-box">
+        <h2>
+          <span class="count counter" data-target="20">20+</span> <span class="square"></span>
+        </h2>
+        <p>Colleges</p>
+      </div>
+      <div class="counter-box">
+        <h2>
+          <span class="count counter" data-target="50">50+</span> <span class="square"></span>
+        </h2>
+        <p>Ambassadors</p>
+      </div>
+    </div>
+    <div class="video-container">
+      <div class="video-container-text">
+          <h2 class="title-text ">Instead of buying books, Subscribe complete year bookset </h2>
+          <p class="title-text "> at just <span>1699/yr</span>  onwards</p>
+          <a href=""><button>Know More</button></a>
+      </div>
+      <div class="video-container-video">
+        <iframe width="500" height="285" src="https://www.youtube.com/embed/A0wcdnzzyIE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ! ================== what we do ===============  -->
+  <!-- <section class="what-we-do" id="what-we-do">
+    <div class="title-box" id="title-box"><h2>What we Do?</h2></div>
+    <div class="content-container">
+      <div class="first-content-container"><p><strong> Save up to 60%</strong> of your Textbook cost.</p>
+        
+      </div>
+      <div class="image-content-container"></div>
+      <div class="bottom-text-content-container"></div>
+    </div>
+  </section> -->
+
+  <!-- <script>
+    const counts = document.querySelectorAll('.count')
+const speed = 5
+
+counts.forEach((counter) => {
+    function upDate(){
+        const target = Number(counter.getAttribute('data-target'))
+        const count = Number(counter.innerText)
+        const inc = target / speed        
+        if(count < target){
+            counter.innerText = Math.floor(inc + count) 
+            setTimeout(upDate, 120)
+        }else{
+            counter.innerText = target
+        }
+    }
+    upDate()
+})
+  </script> -->
+</body>
+
+</html>
