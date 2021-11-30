@@ -82,6 +82,9 @@
     height: 25vh;
     width: 100%;
   }
+  .hero-section .marquee-container {
+    margin-bottom: 0;
+  }
   /* counter and video section  */
   .video-counter {
     max-width: 100%;
