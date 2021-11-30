@@ -42,6 +42,7 @@
   .hero-section .main-container {
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
   .hero-section .main-container .main-content-container {
     /* border: 1px solid red; */
@@ -53,13 +54,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* border: 1px solid white; */
   }
   .hero-section .main-container .main-content-container .main-title {
     margin-bottom: 15px;
