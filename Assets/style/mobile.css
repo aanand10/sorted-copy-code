@@ -42,7 +42,6 @@
   .hero-section .main-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
   }
   .hero-section .main-container .main-content-container {
     /* border: 1px solid red; */
