@@ -113,6 +113,18 @@
           <h2 class="title-text ">Want To Get Textbooks Hassle-Free? Perfect.</h2>
           <p class="subtitle-text"> Subscribe & get complete set of your semester textbooks delivered at your doorstep.</p>
           <p class="text">Once used, Exchange your textbooks with next semester books. All at ease of your convinient place and time. Subscriptions starting at <strong>999/sem.</strong> </p>
+          <!-- ========== animated text =============  -->
+          <p class="animated title-text">
+            Save &nbsp;
+            <a
+              href=""
+              class="typewrite"
+              data-period="1500"
+              data-type='[ " Time"," Energy"," Money"]'
+            >
+              <span class="wrap"></span>
+            </a>
+          </p>
       </div>
       <div class="video-container-video">
         <iframe width="500" height="285" src="https://www.youtube.com/embed/A0wcdnzzyIE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -470,7 +482,69 @@
   
     <!-- js part -->
     <!-- <script src="js/nav.js"></script> -->
-    <script>/*===== MENU SHOW Y HIDDEN =====*/
+    <script>
+    
+    var TxtType = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtType.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName("typewrite");
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-type");
+          var period = elements[i].getAttribute("data-period");
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML =
+          ".typewrite > .wrap { border-right: 0.08em solid #ee3608}";
+        document.body.appendChild(css);
+      };
+    
+    /*===== MENU SHOW Y HIDDEN =====*/
       const navMenu = document.getElementById("nav-menu"),
         toggleMenu = document.getElementById("nav-toggle"),
         closeMenu = document.getElementById("nav-close");
@@ -502,6 +576,10 @@
       $(".btn").on("click", function () {
         $(".menu").toggleClass("show");
       });
+
+
+      //  ============== animated text ================== 
+      
     </script>
 
   <!-- <script>
