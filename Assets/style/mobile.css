@@ -95,19 +95,19 @@
   .video-counter .counter-container {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 30vh;
+    height: 15vh;
     margin: 15px 0;
   }
   .video-counter .counter-container .counter-box {
     /* flex-direction: column; */
-    width: 48%;
+    width: 22%;
     height: 15vh;
   }
   .video-counter .counter-container .counter-box h2 {
-    font-size: 37px;
+    font-size: 25px;
   }
   .video-counter .counter-container .counter-box p {
-    font-size: 25px;
+    font-size: 15px;
   }
   .video-counter .video-container {
     height: auto;
