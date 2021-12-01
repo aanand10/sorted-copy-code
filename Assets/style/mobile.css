@@ -87,9 +87,11 @@
   .hero-section .marquee-container {
     margin-bottom: 0;
   }
-  /* counter and video section  */
+  /* ================ counter and video section ========  */
   .video-counter {
     max-width: 100%;
+    height: 82vh;
+    padding-bottom: 75px;
     /* border: 1px solid white; */
   }
   .video-counter .counter-container {
@@ -111,9 +113,9 @@
   }
   .video-counter .video-container {
     height: auto;
-    height: 64vh;
+    /* height: 64vh; */
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     /* border: 1px solid white; */
     padding: 5px;
   }
@@ -121,6 +123,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: auto;
     margin: 0;
     padding: 0;
@@ -129,9 +132,9 @@
 
   .video-counter .video-container .video-container-text .title-text {
     padding: 5px 10px;
-    font-size: 25px;
+    font-size: 26px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .video-counter .video-container .video-container-text p {
     margin: 0;
@@ -141,6 +144,19 @@
     text-align: center;
     display: block;
     margin: 0 auto;
+  }
+  .video-counter .video-container .video-container-text .animated {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid white; */
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .video-counter .video-container .video-container-text a {
+    /* border: 1px solid white; */
   }
   .video-counter .video-container .video-container-video {
     margin: 0;

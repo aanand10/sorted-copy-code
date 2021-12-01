@@ -235,6 +235,7 @@ body {
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.267);
 }
 .video-counter .video-container .video-container-text {
   /* border: 1px solid red; */
@@ -295,7 +296,7 @@ body {
   align-items: center;
 }
 .video-counter .counter-container .counter-box h2 {
-  font-size: 80px;
+  font-size: 55px;
   color: #393e46;
   color: #00fff5;
   text-shadow: 1.5px 1.5px #00adb5;
