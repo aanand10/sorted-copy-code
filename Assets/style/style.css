@@ -5,6 +5,9 @@
 /* ================================== universal styling classes =============================== */
 :root {
   /* ======================= font sizing =======================  */
+  --title-text: 35px;
+  --subtitle-text: 25px;
+  --text: 17px;
 
   /* ======================= Color variables  =======================  */
   --bg-color: #000000;
@@ -240,26 +243,15 @@ body {
 .video-counter .video-container .video-container-text * {
   margin: 20px 0;
 }
-.video-counter .video-container .video-container-text h2 {
-  font-size: 35px;
+.video-counter .video-container .video-container-text .title-text {
+  font-size: var(--title-text);
 }
-.video-counter .video-container .video-container-text p {
-  font-size: 35px;
+.video-counter .video-container .video-container-text .subtitle-text {
+  font-size: var(--subtitle-text);
+  font-weight: 450;
 }
-.video-counter .video-container .video-container-text span {
-  font-size: 40px;
-  font-weight: 700;
-}
-.video-counter .video-container .video-container-text a button {
-  width: 200px;
-  height: 46px;
-  font-size: 24px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+.video-counter .video-container .video-container-text .text {
+  font-size: var(--text);
 }
 .video-counter .video-container .video-container-video {
   padding: 20px 35px;
