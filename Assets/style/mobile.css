@@ -78,6 +78,7 @@
   .hero-section .main-content-image {
     height: 25vh;
     width: 100%;
+    padding: 0px 10px;
   }
   .hero-section .main-content-image img {
     height: 25vh;
@@ -501,8 +502,34 @@
 @media only screen and (max-width: 470px) {
 }
 
-/* ========================= screen 320px ===================== */
-@media only screen and (max-width: 320px) {
+/* ========================= screen 360px ===================== */
+@media only screen and (max-width: 360px) {
+  /* ========= hero page ======== */
+  .hero-section .main-container .main-content-container .main-title {
+    margin-bottom: 12px;
+    font-size: 36px;
+    color: var(--highlight-color);
+    -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0);
+  }
+  .hero-section .main-container .main-content-container .main-subtitle {
+    margin-bottom: 12px;
+    font-size: 21px;
+  }
+  .hero-section .main-container .main-content-container .main-text {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+  .hero-section .main-container .main-content-container a button {
+    font-size: 14px;
+  }
+  .hero-section .main-container .main-content-container a button {
+    height: 44px;
+    padding: 5px 14px;
+  }
+  .hero-section .main-content-image img {
+    height: 26vh;
+    width: 100%;
+  }
   .container button {
     margin-left: -12px;
   }
