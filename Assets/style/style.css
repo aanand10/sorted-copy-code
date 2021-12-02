@@ -432,26 +432,27 @@ body {
   text-align: center;
 }
 .question-answer .cube-image-part-pc .cube-image-text .icon {
-  width: 57px;
+  width: 66px;
   height: auto;
   position: relative;
 }
 .question-answer .cube-image-part-pc .cube-image-text .icons-1 {
-  top: -279px;
-  right: 854px;
-  width: 76px;
+  top: -267px;
+  right: 846px;
+  width: 66px;
 }
 .question-answer .cube-image-part-pc .cube-image-text .icons-2 {
-  top: -292px;
-  right: 104px;
+  top: -297px;
+  right: 80px;
 }
 .question-answer .cube-image-part-pc .cube-image-text .icons-3 {
-  top: -27px;
-  right: 1014px;
+  top: -19px;
+  right: 1021px;
 }
 .question-answer .cube-image-part-pc .cube-image-text .icons-4 {
-  top: -39px;
-  right: 201px;
+  top: -53px;
+  right: 188px;
+  width: 53px;
 }
 
 /* ============== sorted features section =============== */
@@ -462,7 +463,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(15, 15, 15);
+
   /* background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%); */
   /* border: 1px solid rgb(255, 0, 43); */
 }
@@ -471,11 +472,12 @@ body {
   /* border: 1px solid blue; */
 }
 .sorted-features .title-box h2 {
-  font-size: 50px;
+  font-size: var(--title-text);
   display: block;
   margin: auto;
-  font-weight: 550;
-  color: rgb(238, 238, 238);
+  /* font-weight: 550; */
+  color: var(--text-color);
+  /* border: 1px solid white; */
 }
 .sorted-features .card-container {
   height: 70vh;
@@ -509,14 +511,32 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  background: #2d405993;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 1px 1px 35px #eeeeee34;
-  border: 0.7px solid #eeeeee34;
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 18%,
+    rgba(68, 82, 251, 1) 74%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 18%,
+    rgba(68, 82, 251, 1) 74%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 18%,
+    rgba(68, 82, 251, 1) 74%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
   border-radius: 10px;
+  background-color: transparent;
+  background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+  border: 0.5px solid rgba(255, 255, 255, 0.103);
   /*!--------------------------------------------------------*/
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d; */
   perspective: 600px;
   transition: 0.25s;
   -webkit-transition: 0.25s;
@@ -561,6 +581,7 @@ body {
 .sorted-features .card-container .full-card .card-flip .card-back {
   /*display: none;
   */
+  font: var(--text);
   height: 100%;
   background-color: transparent;
   background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
@@ -636,13 +657,14 @@ body {
   font-size: 25px;
   font-weight: 450;
   /* border: #000b4d 3px dotted; */
-  color: #eeeeee;
+  color: var(--text-color);
 }
 
 .sorted-features .card-container .card-flip .card-front .card-image {
   width: 90%;
-  height: 258px;
+  height: 208px;
 }
+
 .sorted-features .card-container .card-flip .card-bottom-circle {
   /* border: #000b4d 2px solid; */
   width: 70px;
