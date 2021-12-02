@@ -581,7 +581,7 @@ body {
 .sorted-features .card-container .full-card .card-flip .card-back {
   /*display: none;
   */
-  font: var(--text);
+  font-size: var(--text);
   height: 100%;
   background-color: transparent;
   background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
@@ -738,7 +738,7 @@ body {
   display: none;
 }
 .sorted-hai {
-  background-color: rgb(15, 15, 15);
+  /* background-color: rgb(15, 15, 15); */
 
   /* background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%); */
   height: 100vh;
@@ -746,6 +746,7 @@ body {
 }
 .sorted-hai .sorted-hai-pc {
   width: 100%;
+  height: 100vh;
   /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
@@ -759,8 +760,8 @@ body {
   height: 12vh;
 }
 .sorted-hai .sorted-hai-pc .sorted-hai-title h2 {
-  font-size: 50px;
-  color: #eeeeee;
+  font-size: var(--title-text);
+  color: var(--text-color);
 }
 .sorted-hai .sorted-hai-pc .sorted-hai-image {
   width: 70%;
@@ -775,19 +776,25 @@ body {
 .sorted-hai .sorted-hai-pc .sorted-hai-content {
   display: flex;
   width: 70%;
-  margin: 30px 0;
+  margin: 20px 0;
+  justify-content: space-around;
   /* border: 1px solid red; */
 }
 .sorted-hai .sorted-hai-pc .sorted-hai-content .content {
   padding: 20px;
+  margin-right: -28px;
 }
 .sorted-hai .sorted-hai-pc .sorted-hai-content .content h3 {
-  color: rgb(255, 87, 34);
-  font-size: 26px;
-  font-weight: 450;
+  color: var(--text-color);
+  font-size: var(--subtitle-text);
+  /* font-weight: 450; */
+}
+.sorted-hai .sorted-hai-pc .sorted-hai-content .content h3 strong {
+  font-size: var(--title-text);
+  color: var(--sub-highlight-color);
 }
 .sorted-hai .sorted-hai-pc .sorted-hai-content .content p {
-  color: #eeeeee;
+  color: var(--text-color);
   font-weight: 300;
 }
 
