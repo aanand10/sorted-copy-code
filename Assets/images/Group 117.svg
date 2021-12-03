@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="72" viewBox="0 0 240 72">
+  
+  <g id="Group_117" data-name="Group 117" transform="translate(-116.511 -1837.043)">
+    <g id="Group_109" data-name="Group 109" transform="translate(116.511 1840.863)">
+      <g id="Group_104" data-name="Group 104">
+        <path id="Path_8" data-name="Path 8" d="M1208.357,445,1200,469.178l22.735,10.967,11.988-4.935-1.89-12.663Z" transform="translate(-1200 -444.153)" fill="#9c4604" fill-rule="evenodd"/>
+        <path id="Path_10" data-name="Path 10" d="M1425.039,571.882l-10.872,25.335-26.334-8.76L1381,575.068,1394.912,568Z" transform="translate(-1342.678 -540.945)" fill="#9c4604" fill-rule="evenodd"/>
+        <path id="Path_12" data-name="Path 12" d="M1269.139,590.3s-6.6,22.444-6.009,22.325-44.542-9.452-44.542-9.452L1216,593.96l4.95-19.96Z" transform="translate(-1212.609 -545.601)" fill="#cc5900" fill-rule="evenodd"/>
+        <path id="Path_630" data-name="Path 630" d="M10136.08,1787.112a13.339,13.339,0,0,0,0,5.333c.336,1.23,6.617,11.769,17.711,13.956s29.867,0,29.867,0Z" transform="translate(-10132.782 -1739.193)" fill="#cc5900"/>
+        <path id="Path_22" data-name="Path 22" d="M1284.722,441l-46.653.826,15.708,19.007,1.537,1.889h-.828a1.507,1.507,0,0,1-.709-.118h-3.189a20.645,20.645,0,0,0-7.321,1.417,8.617,8.617,0,0,0-4.37,3.306,6.876,6.876,0,0,0-1.063,4.839,12.766,12.766,0,0,0,2.833,5.9,29.821,29.821,0,0,0,6.261,5.785,49.945,49.945,0,0,0,8.622,4.6,46.732,46.732,0,0,0,9.567,2.833,32.248,32.248,0,0,0,9.449.708,18.609,18.609,0,0,0,7.321-1.653,7.9,7.9,0,0,0,3.9-3.659,6.978,6.978,0,0,0,.591-4.958,15.464,15.464,0,0,0-3.188-5.667c-.119-.118-.119-.237-.237-.237-.118-.118-.118-.237-.235-.237a.255.255,0,0,0-.237-.237.41.41,0,0,0-.118-.237,3.415,3.415,0,0,0-1.063-1.062c-.118-.118-.235-.237-.472-.472-.119-.118-.354-.237-.472-.472l2.717-.118,29.055-1.3Z" transform="translate(-1229.765 -441)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+        <path id="Path_23" data-name="Path 23" d="M1276.632,495.121a31.525,31.525,0,0,1-7.3-.825,45.466,45.466,0,0,1-9.42-2.827,43.4,43.4,0,0,1-8.361-4.476,28.5,28.5,0,0,1-6.121-5.536,12.578,12.578,0,0,1-2.592-5.42,6.114,6.114,0,0,1,.826-4.123,9.075,9.075,0,0,1,4-3.063,22.81,22.81,0,0,1,6.947-1.3h2.354a1.492,1.492,0,0,1,.707.118h.707a1.741,1.741,0,0,1,.823.118l2.354.235-3.062-3.769-14.363-17.433L1288.17,446l25.786,28.86-32.144,1.413,1.766,1.649c.237.118.354.237.591.353l.47.471.469.471c.119.117.472.589.472.589l.589.589.235.237a14.172,14.172,0,0,1,2.943,5.3,6.058,6.058,0,0,1-.47,4.358,7.849,7.849,0,0,1-3.532,3.181A18.949,18.949,0,0,1,1278.4,495,8.938,8.938,0,0,1,1276.632,495.121Z" transform="translate(-1233.713 -444.941)" fill="#ff6f00" fill-rule="evenodd"/>
+      </g>
+    </g>
+    <g id="Group_114" data-name="Group 114" transform="translate(190.634 1837.043)">
+      <g id="Group_113" data-name="Group 113" transform="translate(0 17.596)">
+        <path id="Path_28" data-name="Path 28" d="M829.5,551.013,862.862,539.5" transform="translate(-829.5 -538.942)" fill="none" stroke="#fff" stroke-miterlimit="8" stroke-width="1" fill-rule="evenodd"/>
+        <path id="Path_29" data-name="Path 29" d="M0,.511H102.767V.6H0ZM102.767,0c.468,0,.848.25.848.558s-.38.558-.848.558-.848-.25-.848-.558S102.3,0,102.767,0Z" transform="translate(33.38)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      </g>
+      <text id="Say_No_to_E-books_instead" data-name="Say No to E-books, instead" transform="translate(78.775 12.779)" fill="#4452fb" font-size="8" font-family="Source Sans Pro" font-weight="600"><tspan x="-54.164" y="0">Making Pricey Textbooks</tspan></text>
+      <text id="GET_REAL_BOOKS" data-name="GET REAL BOOKS" transform="translate(83.775 34.167)" fill="#f2f2f2" font-size="12" font-family="Source Sans Pro"  font-weight="600"><tspan x="-49.116" y="0">Affordable</tspan></text>
+     
+    </g>
+  </g>
+</svg>

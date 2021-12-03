@@ -208,10 +208,14 @@
   .cube-image-part-mobile .cube-img {
     display: block;
     margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* border: 1px solid black; */
   }
   .cube-image-part-mobile .cube-img .mobile-cube {
-    width: 89%;
+    width: 62%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -231,14 +235,11 @@
     justify-content: center;
   }
   .cube-image-part-mobile .question-answer-list li img {
-    width: 50px;
+    width: 90%;
     height: auto;
     margin: 5px 0;
   }
-  .cube-image-part-mobile .question-answer-list li p {
-    font-size: 17px;
-    color: #eeeeee;
-  }
+
   /*!=============------- Features section -------================= */
   .sorted-features {
     min-height: 100vh;
