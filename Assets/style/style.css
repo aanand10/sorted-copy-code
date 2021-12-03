@@ -834,7 +834,7 @@ body {
 .pricing .pricing-container .pricing-card {
   height: 70vh;
   width: 27%;
-  margin: 0 20px;
+  margin: 0 -10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -851,10 +851,16 @@ body {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 1px 1px 35px #eeeeee34;
   border: 0.7px solid #eeeeee7e;
   backdrop-filter: blur(9px);
+
+  background-color: var(--text-color);
 }
 .pricing .pricing-container .pricing-card:nth-child(odd) {
   height: 55vh;
   width: 23%;
+  z-index: 1;
+}
+.pricing .pricing-container .pricing-card:nth-child(even) {
+  z-index: 2;
 }
 
 .pricing .pricing-container .pricing-card .pricing-card-title {
@@ -862,9 +868,11 @@ body {
   margin: 15px 0;
   font-size: 38px;
   font-weight: 450;
-  color: #eeeeee;
+  color: var(--highlight-color);
 }
+
 .pricing .pricing-container .pricing-card:nth-child(odd) .pricing-card-title {
+  color: #080707;
   margin: 8px 0;
   font-size: 30px;
   font-weight: 450;
@@ -872,24 +880,25 @@ body {
 .pricing .pricing-container .pricing-card .pricing-card-numbers {
   /* border: #00090e 2px solid; */
   margin: 10px 0;
-  font-size: 40px;
-  color: #5c7aea;
+  font-size: var(--title-text);
+  color: #ff4500;
 }
 
 .pricing .pricing-container .pricing-card:nth-child(odd) .pricing-card-numbers {
   margin: 7px 0;
-  color: #ff4500;
+  color: var(--highlight-color);
 }
 .pricing .pricing-container .pricing-card .pricing-card-numbers .rupaya,
 .time {
   font-size: 20px;
   vertical-align: bottom;
-  color: #eeeeee;
+  color: #080707;
 }
 .pricing .pricing-container .pricing-card .pricing-card-numbers .rupaya {
   /* text-align: start; */
   vertical-align: top;
 }
+
 .pricing .pricing-container .pricing-card .pricing-card-content {
   /* border: crimson 2px solid; */
   list-style: none;
@@ -926,6 +935,7 @@ body {
 }
 .pricing .pricing-container .card-1:hover {
   position: relative;
+  z-index: 3;
   transform: scale(1.2);
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
   -webkit-transform: scale(1.2);
@@ -995,6 +1005,7 @@ body {
 }
 .pricing .pricing-container .card-3:hover {
   position: relative;
+  z-index: 3;
   transform: scale(1.2);
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
   -webkit-transform: scale(1.2);
