@@ -1095,7 +1095,7 @@ body {
   justify-content: center;
 }
 .go-green .go-green-image-box .go-green-image-box-content {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1103,14 +1103,73 @@ body {
   height: 100%;
   width: 60%;
 }
+.go-green .go-green-image-box .go-green-image-box-content * {
+  margin: 10px 0;
+}
 .go-green .go-green-image-box .go-green-image-box-content h2 {
   font-size: var(--title-text);
   color: var(--text-color);
 }
 .go-green .go-green-image-box .go-green-image-box-content p {
-  font-size: var(--text);
+  font-size: 22px;
   color: var(--text-color);
-  width: 40%;
+  width: 94%;
+}
+.go-green .go-green-image-box .go-green-image-box-content a button {
+  --color: var(--highlight-color);
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.go-green .go-green-image-box .go-green-image-box-content a button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 180px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.go-green .go-green-image-box .go-green-image-box-content a button:hover {
+  color: #fff;
+}
+
+.go-green .go-green-image-box .go-green-image-box-content a button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.go-green
+  .go-green-image-box
+  .go-green-image-box-content
+  a
+  button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.go-green
+  .go-green-image-box
+  .go-green-image-box-content
+  a
+  button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
 }
 /* ==================== search bar section ================= */
 
