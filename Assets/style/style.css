@@ -1059,6 +1059,36 @@ body {
   color: #c0c0c0;
 }
 
+/* ==================== go green section ============== */
+.go-green {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.go-green .go-green-image-box {
+  height: 70vh;
+  width: 85%;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(113, 193, 240, 0.294);
+  /*background: url() no-repeat center center fixed;
+  */
+  background: url(../images/go-green-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-size: 85% 87%;
+  */
+  background-size: 1294px 688px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
 /* ==================== search bar section ================= */
 
 .searchbar {
