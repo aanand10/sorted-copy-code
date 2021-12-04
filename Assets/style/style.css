@@ -1215,10 +1215,15 @@ body {
   align-items: center;
   color: #eeeeee;
 
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  /* background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
+  background-image: linear-gradient(
+    60deg,
+    #3d3393 0%,
+    #2b76b9 37%,
+    #2cacd1 65%,
+    #35eb93 100%
+  );
 }
 .searchbar .inner-box .title-box {
   /* border: #000b4d 2px solid; */
@@ -1230,7 +1235,7 @@ body {
   align-items: center;
 }
 .searchbar .inner-box .title-box h2 {
-  font-size: 25px;
+  font-size: var(--title-text);
 }
 .searchbar .inner-box .title-box p {
   font-size: 17px;
@@ -1327,22 +1332,30 @@ input[type="text"]::placeholder {
 }
 .searchbar .inner-box .bottom-box .bottom-box-heading {
   font-size: 45px;
-  margin: -12px 0 11px 0;
-  color: #eeeeee6b;
+  margin: 0px 0 11px 0;
+  /* color: #eeeeee6b; */
   /* background: linear-gradient(135deg, #172b4d 0, #0a48b3 100%); */
   /* background-color: #0cbaba; */
   /* background-image: linear-gradient(315deg, #ffffff 0%, #d85ad4 74%); */
-  color: rgb(236, 233, 234);
+  color: var(--text-color);
 
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.644);
-  -webkit-text-stroke: 1.6px #010047bb;
+  /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.644); */
+  /* -webkit-text-stroke: 1.6px #010047bb; */
   /* border: #000000 1px solid; */
 }
-.searchbar .inner-box .bottom-box .bottom-box-button {
+.searchbar .inner-box .bottom-box .button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.searchbar .inner-box .bottom-box .button-container .bottom-box-button {
   border-radius: 5px;
   padding: 0 35px;
+
   font-weight: 500;
   height: 50px;
   font-size: 18px;
@@ -1356,7 +1369,13 @@ input[type="text"]::placeholder {
   -o-border-radius: 5px;
   text-align: center;
 }
-
+.searchbar
+  .inner-box
+  .bottom-box
+  .button-container
+  .bottom-box-button:nth-child(2) {
+  margin-left: 20px;
+}
 /* ========================= footer section ===================== */
 footer {
   width: 100%;
