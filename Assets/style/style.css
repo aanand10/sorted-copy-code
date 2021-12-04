@@ -1072,7 +1072,9 @@ body {
   width: 85%;
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(113, 193, 240, 0.294);
+  box-shadow: 0 8px 32px 0 rgba(113, 193, 240, 0.294),
+    2px 2px 20px rgba(255, 255, 255, 0.103) inset;
+
   /*background: url() no-repeat center center fixed;
   */
   /* magical effect  */
