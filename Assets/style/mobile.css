@@ -295,7 +295,7 @@
     /* background-color: #d9e4f5; */
     /* background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%); */
     padding: 0 8px;
-    background-color: rgb(15, 15, 15);
+    /* background-color: rgb(15, 15, 15); */
     color: #0b2070;
   }
   .sorted-hai .sorted-hai-pc {
@@ -320,9 +320,11 @@
   }
   .sorted-hai .sorted-hai-mobile .sorted-hai-title h2 {
     font-size: 34px;
-    color: #eeeeee;
+    color: var(--text-color);
   }
   .sorted-hai .sorted-hai-mobile .image-content-container {
+    /* border: #ffd700 1px solid; */
+    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -351,11 +353,14 @@
     flex-direction: column;
   }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content {
-    font-size: 14px;
+    font-size: 25px;
   }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content h3 {
     font-weight: 500;
     color: #eeeeee;
+  }
+  .sorted-hai .sorted-hai-mobile .sorted-hai-content h3 strong {
+    color: #a5fecb;
   }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content .content-text {
     font-size: 12px;
