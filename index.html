@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="Assets/style/style.css" />
   <link rel="stylesheet" href="Assets/style/nav-style.css" />
   <link rel="stylesheet" href="Assets/style/mobile.css">
+  <!-- ---------------------- corosal style/js --------------------  -->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -184,11 +189,11 @@
     </section>
     <!-- <hr style="border-top: #satrnngi ;"> -->
     <!-- ======================== sort-ed features =====================  -->
-    <section class="sorted-features" id="sorted-features">
+    <section class=" sorted-features sorted-features-pc" id="sorted-features" >
       <div class="title-box">
         <h2>Sort-ed <span style="color: #eeeeee;">Features</span></h2>
       </div>
-      <div class="card-container">
+      <div class="card-container-pc" >
         <!-- <div class="card">
             <p class="card-title">Pay After Delivery</p>
             <img src="" alt="" class="card-image" />
@@ -279,6 +284,69 @@
       </div>
     </section>
     <!-- <hr style="border-top: #eeeeeea8;"> -->
+
+    <!-- mobile card section  -->
+    <section class="carousel carousel-mobile" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper">
+            <a href="#carousel__slide4"
+               class="carousel__prev">Go to last slide</a>
+            <a href="#carousel__slide2"
+               class="carousel__next">Go to next slide</a>
+          </div>
+        </li>
+        <li id="carousel__slide2"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide1"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide2"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4"
+             class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4"
+            tabindex="0"
+            class="carousel__slide">
+          <div class="carousel__snapper"></div>
+          <a href="#carousel__slide3"
+             class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1"
+             class="carousel__next">Go to first slide</a>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1"
+               class="carousel__navigation-button">Go to slide 1</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2"
+               class="carousel__navigation-button">Go to slide 2</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3"
+               class="carousel__navigation-button">Go to slide 3</a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide4"
+               class="carousel__navigation-button">Go to slide 4</a>
+          </li>
+        </ol>
+      </aside>
+    </section>
     <!-- !============================ sorted hai section =============================== -->
     <section class="sorted-hai" id="sorted-hai">
       <div class="sorted-hai-pc">
@@ -593,9 +661,24 @@
   
   
     <!-- js part -->
+    <!-- ---------------- corsosal ------------- -->
+ 
+  
     <!-- <script src="js/nav.js"></script> -->
-    <script>
     
+    <script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
     var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
