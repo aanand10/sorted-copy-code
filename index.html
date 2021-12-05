@@ -191,7 +191,7 @@
     <!-- ======================== sort-ed features =====================  -->
     <section class=" sorted-features sorted-features-pc" id="sorted-features" >
       <div class="title-box">
-        <h2>Sort-ed <span style="color: #eeeeee;">Features</span></h2>
+        <h2>Sort-ed <span style="color: var(--text);">Features</span></h2>
       </div>
       <div class="card-container-pc" >
         <!-- <div class="card">
@@ -286,67 +286,102 @@
     <!-- <hr style="border-top: #eeeeeea8;"> -->
 
     <!-- mobile card section  -->
-    <section class="carousel carousel-mobile" aria-label="Gallery">
-      <ol class="carousel__viewport">
-        <li id="carousel__slide1"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper">
-            <a href="#carousel__slide4"
-               class="carousel__prev">Go to last slide</a>
-            <a href="#carousel__slide2"
-               class="carousel__next">Go to next slide</a>
+    <section class="corosal-box">
+      <div class="title-box">
+        <h2>Sort-ed <span style="color: var(--text);">Features</span></h2>
+      </div>
+      <div class="slider">
+  
+        <!-- <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+        <a href="#slide-5">5</a> -->
+      
+        <div class="slides">
+          <div class="full-card">
+            <div class="card-flip card-flip-first">
+              <div class="card-front">
+                <p class="card-title">
+                  Delivery at <br />
+                   Doorstep 
+                </p>
+                <img src="Assets/images/delivery.svg" alt="" class="card-image" />
+              </div>
+    
+              <div class="card-back">
+                <p>
+                  Get lightning fast doorstep delivery of all your textbooks without leaving your comfort zone.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="card-bottom-circle">
+              <img src="images/icons/coins.svg" alt="" />
+            </div> -->
           </div>
-        </li>
-        <li id="carousel__slide2"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide1"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide3"
-             class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide3"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide2"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide4"
-             class="carousel__next">Go to next slide</a>
-        </li>
-        <li id="carousel__slide4"
-            tabindex="0"
-            class="carousel__slide">
-          <div class="carousel__snapper"></div>
-          <a href="#carousel__slide3"
-             class="carousel__prev">Go to previous slide</a>
-          <a href="#carousel__slide1"
-             class="carousel__next">Go to first slide</a>
-        </li>
-      </ol>
-      <aside class="carousel__navigation">
-        <ol class="carousel__navigation-list">
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide1"
-               class="carousel__navigation-button">Go to slide 1</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide2"
-               class="carousel__navigation-button">Go to slide 2</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide3"
-               class="carousel__navigation-button">Go to slide 3</a>
-          </li>
-          <li class="carousel__navigation-item">
-            <a href="#carousel__slide4"
-               class="carousel__navigation-button">Go to slide 4</a>
-          </li>
-        </ol>
-      </aside>
-    </section>
+          <div class="full-card">
+            <div class="card-flip card-flip-common">
+              <div class="card-front">
+                <p class="card-title">
+                  Addition Premium Covering 
+                </p>
+                <img src="Assets/images/covering.svg" alt="" class="card-image" />
+              </div>
+    
+              <div class="card-back">
+                <p>
+                  High grade Sort-Ed certified covering for ensuring enhanced life of textbook.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="card-bottom-circle">
+              <img src="images/icons/Delivery.svg" alt="" />
+            </div> -->
+          </div>
+          <div class="full-card">
+            <div class="card-flip card-flip-common">
+              <div class="card-front">
+                <p class="card-title">
+                  Superior Books <br/> Quality 
+              
+                </p>
+                <img src="Assets/images/quality.svg" alt="" class="card-image" />
+              </div>
+              <div class="card-back">
+                <p>
+                  Strict quality and filtration check-ups making sure every book is up to the mark.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="card-bottom-circle">
+              <img src="images/icons/Assurance 2 (1).svg" alt="" />
+            </div> -->
+          </div>
+          <div class="full-card">
+            <div class="card-flip card-flip-last">
+              <div class="card-front">
+                <p class="card-title">
+                  Pay After <br> Delivery
+                </p>
+                <img src="Assets/images/pay.svg" alt="" class="card-image" />
+              </div>
+    
+              <div class="card-back">
+                <p>
+                  We accept payments when you feel satisfied after checking quality of books delivered.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="card-bottom-circle">
+              <img src="images/icons/book 2.svg" alt="" />
+            </div> -->
+          </div>
+          <!-- <div id="slide-5">
+            5
+          </div> -->
+        </div>
+      </div>
+  </section>
     <!-- !============================ sorted hai section =============================== -->
     <section class="sorted-hai" id="sorted-hai">
       <div class="sorted-hai-pc">
@@ -667,18 +702,7 @@
     <!-- <script src="js/nav.js"></script> -->
     
     <script>
-    $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:4,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true
-});
+   
     var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
