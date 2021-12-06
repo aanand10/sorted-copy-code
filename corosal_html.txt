@@ -1,0 +1,394 @@
+> html part 
+<section class="corosal-box">
+      <div class="title-box">
+        <h2>Sort-ed <span style="color: var(--text);">Features</span></h2>
+      </div>
+      <div class="slider">
+        <div class="slides">
+          <div class="full-card">
+            <div class="card-flip card-flip-first">
+              <div class="card-front">
+                <p class="card-title">
+                  Delivery at <br />
+                   Doorstep 
+                </p>
+                <img src="Assets/images/delivery.svg" alt="" class="card-image" />
+              </div>
+    
+              <div class="card-back">
+                <p>
+                  Get lightning fast doorstep delivery of all your textbooks without leaving your comfort zone.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="card-bottom-circle">
+              <img src="images/icons/coins.svg" alt="" />
+            </div> -->
+          </div>
+          <div class="full-card">
+            <div class="card-flip card-flip-common">
+              <div class="card-front">
+                <p class="card-title">
+                  Addition Premium Covering 
+                </p>
+                <img src="Assets/images/covering.svg" alt="" class="card-image" />
+              </div>
+    
+              <div class="card-back">
+                <p>
+                  High grade Sort-Ed certified covering for ensuring enhanced life of textbook.
+                </p>
+              </div>
+            </div>
+            <!-- <div class="card-bottom-circle">
+              <img src="images/icons/Delivery.svg" alt="" />
+            </div> -->
+          </div>
+          <div class="full-card">
+            <div class="card-flip card-flip-common">
+              <div class="card-front">
+                <p class="card-title">
+                  Superior Books <br/> Quality 
+              
+                </p>
+                <img src="Assets/images/quality.svg" alt="" class="card-image" />
+              </div>
+              <div class="card-back">
+                <p>
+                  Strict quality and filtration check-ups making sure every book is up to the mark.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="full-card">
+            <div class="card-flip card-flip-last">
+              <div class="card-front">
+                <p class="card-title">
+                  Pay After <br> Delivery
+                </p>
+                <img src="Assets/images/pay.svg" alt="" class="card-image" />
+              </div>
+    
+              <div class="card-back">
+                <p>
+                  We accept payments when you feel satisfied after checking quality of books delivered.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="corosal-nav">
+          <a href="#slide-1">1</a>
+          <a href="#slide-2">2</a>
+          <a href="#slide-3">3</a>
+          <a href="#slide-4">4</a>
+        </div>
+        
+      </div>
+      
+  </section>
+
+  > css part 
+  .corosal-box {
+    display: block;
+  }
+  .corosal-box {
+    padding: 10px;
+    height: 90vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .corosal-box .title-box {
+    /* border: 1px solid white; */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .corosal-box .title-box h2 {
+    font-size: var(--title-text);
+  }
+
+  .corosal-box .slider {
+    width: 350px;
+    padding: 5px;
+    color: #0b2070;
+    text-align: center;
+    overflow: hidden;
+    /* border: 1px solid rgb(255, 255, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .corosal-box .slider .slides .full-card .card-flip {
+    min-height: 420px;
+    width: 285px;
+    /*width: 100%;
+    */
+    padding: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid rgb(0, 0, 0);
+    */
+    margin: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: rgb(2, 0, 36);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 1) 18%,
+      rgba(68, 82, 251, 1) 74%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 1) 18%,
+      rgba(68, 82, 251, 1) 74%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 1) 18%,
+      rgba(68, 82, 251, 1) 74%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    border-radius: 10px;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+    border: 0.5px solid rgba(255, 255, 255, 0.103);
+    /*!--------------------------------------------------------*/
+    /* transform-style: preserve-3d; */
+    perspective: 600px;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+  }
+  .corosal-box .slider .slides .full-card:nth-child(1) .card-flip {
+    border-top-left-radius: 100px;
+  }
+  .corosal-box .slider .slides .full-card:nth-child(4) .card-flip {
+    border-bottom-right-radius: 100px;
+  }
+  .corosal-box .slider .slides .full-card .card-flip .card-front {
+    padding-top: -8px;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px dotted green; */
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 376px; */
+    width: 330px;
+    height: 55vh;
+    /*!----------------------------------*/
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+
+  /* .sorted-features .card-container .full-card:hover .card-flip .card-front {
+  } */
+
+  .corosal-box .slider .slides .full-card .card-flip .card-back {
+    /*display: none;
+    */
+    font-size: var(--text);
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+    padding: 10px;
+    color: #ffd700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  .corosal-box .slider .slides .full-card:hover .card-flip {
+    background-color: transparent;
+  }
+  .corosal-box .slider .slides .full-card:hover .card-flip-first {
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 10px;
+  }
+  .corosal-box .slider .slides .full-card:hover .card-flip-last {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 100px;
+  }
+  .corosal-box .slider .slides .full-card:hover .card-flip-common {
+    border-bottom-left-radius: 10px;
+    /* border-top-right-radius: 100px; */
+  }
+  .corosal-box .slider .slides .full-card:hover .card-flip .card-front {
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+  }
+
+  .corosal-box .slider .slides .full-card:hover .card-flip .card-back {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /* border-bottom-left-radius: 100px; */
+  }
+  .corosal-box .slider .slides .full-card:hover .card-flip-first .card-back {
+    border-bottom-left-radius: 100px;
+  }
+  .corosal-box .slider .slides .full-card:hover .card-flip-last .card-back {
+    border-top-right-radius: 100px;
+  }
+  /* .sorted-features .card-container .full-card:nth-child(1) .card-flip .card-back {
+    background-color: #07192f;
+    /* height: ; */
+  /* } */
+  .corosal-box .slider .slides .full-card .card-front .card-title {
+    height: 92px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 450;
+    /* border: #000b4d 3px dotted; */
+    color: var(--text-color);
+  }
+
+  .corosal-box .slider .slides .full-card .card-flip .card-front .card-image {
+    width: 90%;
+    height: 208px;
+  }
+
+  .corosal-box .slider .slides {
+    display: flex;
+    margin-left: 5px;
+    overflow-x: auto;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+  }
+  .corosal-box .slider .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+  }
+  .corosal-box .slider .slides::-webkit-scrollbar-thumb {
+    background: rgba(138, 138, 138, 0.863);
+    border-radius: 10px;
+  }
+  .corosal-box .slider .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .corosal-box .slider .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 330px;
+    height: 55vh;
+    margin-right: 50px;
+    border-radius: 10px;
+    /* background: #eee; */
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    margin-bottom: 3px;
+  }
+  .corosal-box .slider .slides > div:target {
+    /*   transform: scale(0.8); */
+  }
+
+  .corosal-box .slider .corosal-nav a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+  .corosal-box .slider .corosal-nav a:active {
+    top: 1px;
+  }
+  .corosal-box .slider .corosal-nav a:focus {
+    background: #000;
+  }
+
+  /* Don't need button navigation */
+  @supports (scroll-snap-type) {
+    .slider .corosal-nav a {
+      display: block;
+    }
+  }
+
+  /* ============ corosal content ============= */
+
+  .corosal-box .slider .slides .full-card .card-flip {
+    width: 330px;
+  }
+  .corosal-box .slider .slides .full-card:nth-child(1) .card-flip {
+    border-top-left-radius: 10px;
+  }
+  .corosal-box .slider .slides .full-card:nth-child(4) .card-flip {
+    border-bottom-right-radius: 10px;
+  }
+
+  .corosal-box .slider .slides .full-card:hover .card-flip-first .card-back {
+    border-bottom-left-radius: 10px;
+  }
+  .corosal-box .slider .slides .full-card:hover .card-flip-last .card-back {
+    border-top-right-radius: 10px;
+  }
+
+ 
