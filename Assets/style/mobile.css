@@ -390,42 +390,58 @@
   /* ================== pricing setion ================== */
   .pricing {
     height: auto;
+    display: none;
   }
-  .pricing .pricing-container {
+  .pricing-mobile {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    border: 1px solid white;
+  }
+  .pricing-mobile .pricing-title {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    border: #4452fb 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pricing-mobile .pricing-title h2 {
+    font-size: var(--title-text);
+  }
+  .pricing-mobile .gallery {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
     padding: 2px;
   }
-  .pricing .pricing-container .pricing-card {
+  .pricing-mobile .gallery .pricing-card {
     width: 83%;
     height: 57vh;
   }
-  .pricing .pricing-container .pricing-card .pricing-card-title {
+  .pricing-mobile .gallery .pricing-card .pricing-card-title {
     margin: 0;
   }
-  .pricing .pricing-container .pricing-card {
+  .pricing-mobile .gallery .pricing-card {
     margin-bottom: 60px;
   }
-  .pricing .pricing-container .pricing-card:nth-child(odd) {
-    width: 83%;
-    height: 50vh;
+  .pricing-mobile .gallery .pricing-card:nth-child(odd) {
+    width: 70%;
+    height: 55vh;
     /* margin: 20px 0; */
 
     box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.3);
   }
-  .pricing
-    .pricing-container
-    .pricing-card:nth-child(odd)
-    .pricing-card-content {
+  .pricing-mobile .gallery .pricing-card:nth-child(odd) .pricing-card-content {
     margin: 7px 0;
     font-size: 14px;
   }
   /* .pricing .pricing-container .pricing-card .pricing-card-numbers {
     margin: 0;
   } */
-  .pricing .pricing-container .card-1:hover {
+  .pricing-mobile .gallery .pricing-container .card-1:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -436,7 +452,7 @@
       inset 0 0 20px rgba(255, 255, 255, 0.5);
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
   }
-  .pricing .pricing-container .card-3:hover {
+  .pricing-mobile .gallery .card-3:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -449,7 +465,7 @@
   }
   /* ================== carousel section ============== */
   .mobile-features {
-    display: block;
+    display: flex;
     height: 80vh;
     /* border: 1px solid white; */
   }
@@ -463,6 +479,31 @@
   .mobile-features .title-box h2 {
     font-size: var(--title-text);
   }
+  .pricing-mobile .gallery {
+    /* background: #eee; */
+    height: 55vh;
+  }
+
+  .pricing-mobile .gallery .gallery-cell {
+    width: 70%;
+    height: 55vh;
+    margin-right: 10px;
+    background: var(--text-color);
+    counter-increment: gallery-cell;
+  }
+
+  /* cell number */
+  /* <div class="gallery-cell" ></div> */
+  /* .pricing-mobile .gallery .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  } */
+
+  /* ================= mobile features section  =======  */
   .mobile-features .carousel {
     height: 460px;
     /* border: 1px solid red; */
@@ -735,18 +776,41 @@
     font-size: 10px !important;
   }
   /* ================ pricing setion ============== */
-  .pricing {
-    width: 100%;
+  .pricing-mobile {
+    display: none;
   }
-  .pricing .pricing-title h2 {
+
+  .pricing-mobile .pricing-title h2 {
     color: #0b2070;
     font-size: 28px;
     /* border: 3px solid blue; */
   }
-  .pricing .pricing-container .pricing-card .pricing-card-numbers {
+  .pricing-mobile .gallery {
+    background: #eee;
+  }
+
+  .pricing-mobile .gallery .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8c8;
+    counter-increment: gallery-cell;
+  }
+
+  /* cell number */
+  .pricing-mobile .gallery .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  .pricing-mobile .pricing-container .pricing-card .pricing-card-numbers {
     margin: 0;
   }
-  .pricing .pricing-container .pricing-card .pricing-card-title {
+  .pricing-mobile .pricing-container .pricing-card .pricing-card-title {
     margin: 0;
   }
   .pricing
