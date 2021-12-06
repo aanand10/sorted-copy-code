@@ -746,65 +746,68 @@ body {
 
 /* ============= mobile section style ==============   */
 .mobile-features {
-  min-height: 90vh;
+  min-height: 70vh;
+  /* border: 1px solid white; */
   width: 100%;
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(15, 15, 15);
+  /* background-color: rgb(15, 15, 15); */
   /* background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%); */
   /* border: 1px solid rgb(255, 0, 43); */
 }
 
 .mobile-features .carousel .carousel-inner {
-  height: 80vh;
+  /* height: 80vh; */
   height: 376px;
   width: 80vw;
-  /* border: 1px solid rgb(0, 100, 0); */
+  /* border: 1px solid rgb(247, 255, 138); */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  padding: 0 auto;
+  /* margin: 30px 0; */
 }
 .mobile-features .carousel .carousel-inner .full-card {
   display: flex;
   flex-direction: column;
-  /* border: #000b4d 3px solid; */
+  margin: 0 5px;
+  /* border: #6176f1 3px solid; */
+  height: 376px;
+  background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
 }
 .mobile-features .carousel .carousel-inner .full-card .card-flip {
-  /* min-height: 80vh; */
-  height: 376px;
-  width: 285px;
-  /*width: 100%;
-  */
+  /*min-height: 80vh;
+  */height: 376px;
+  height: 100%;
+  /*width: 285px;
+  */width: 100%;
   padding: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*border: 1px solid rgb(0, 0, 0);
-  */
-  /* margin: 15px; */
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  background: #2d405993;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 1px 1px 35px #eeeeee34;
+  /*border: 1px solid rgb(255, 255, 255);
+  *//*margin: 15px;
+  */border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  /*background: #2d405993;
+  */box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 1px 1px 35px #eeeeee34;
   border: 0.7px solid #eeeeee34;
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
-  border-radius: 10px;
-  /*!--------------------------------------------------------*/
-  /* transform-style: preserve-3d;
-  perspective: 600px; */
-  /* transition: 0.25s;
+  /*!--------------------------------------------------------*//*transform-style: preserve-3d;
+  perspective: 600px;
+  *//*transition: 0.25s;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
-  -o-transition: 0.25s; */
+  -o-transition: 0.25s;
+  */:;
 }
 .mobile-features .carousel .carousel-inner .full-card:nth-child(1) .card-flip {
   border-top-left-radius: 10px;
@@ -943,7 +946,7 @@ body {
   font-size: 25px;
   font-weight: 450;
   /* border: #000b4d 3px dotted; */
-  color: #eeeeee;
+  color: var(--text-color);
 }
 
 .mobile-features

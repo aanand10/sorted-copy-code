@@ -281,6 +281,7 @@
     height: auto;
     width: 100%;
     margin: 10px 0;
+    border-radius: 15px;
     /* overflow-y: scroll; */
   }
   .sorted-features .card-container .full-card .card-flip {
@@ -449,7 +450,7 @@
   /* ================== carousel section ============== */
   .mobile-features {
     display: block;
-    height: 80vh;
+    height: 70vh;
     /* border: 1px solid white; */
   }
   .mobile-features .title-box {
@@ -463,11 +464,12 @@
     font-size: var(--title-text);
   }
   .mobile-features .carousel {
-    height: 400px;
-    width: 70vw;
+    height: 460px;
+    /* border: 1px solid red; */
+    width: 80vw;
     margin-top: 40px;
     margin-bottom: 40px;
-    max-width: 678px;
+    /* max-width: 678px; */
     overflow-x: hidden;
     position: relative;
     display: flex;
@@ -489,6 +491,8 @@
   .mobile-features .carousel .carousel-inner .carousel-item {
     flex: 1;
     height: 100%;
+    /* border: #a5fecb 2px dotted; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -552,7 +556,7 @@
     border-radius: 2px;
     opacity: 0.5;
     cursor: pointer;
-    margin: 3px;
+    margin: 0 2px;
   }
 
   .carousel-indicators span.active {
