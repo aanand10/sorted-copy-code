@@ -29,7 +29,7 @@
 html {
   scroll-behavior: smooth;
   font-family: "Source Sans Pro", sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 * {
   margin: 0;

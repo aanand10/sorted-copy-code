@@ -396,13 +396,13 @@
     display: block;
     width: 100%;
     height: 80vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
   .pricing-mobile .pricing-title {
     height: 10vh;
     width: 100%;
     text-align: center;
-    border: #4452fb 1px solid;
+    /* border: #4452fb 1px solid; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -415,7 +415,13 @@
     flex-direction: column;
     height: auto;
     width: 100%;
-    padding: 2px;
+    /* padding: 2px; */
+    justify-content: center;
+    /* align-items: center; */
+    margin: 40px 0;
+  }
+  .flickity-page-dots .dot {
+    background: #20bdff !important;
   }
   .pricing-mobile .gallery .pricing-card {
     width: 83%;
@@ -429,7 +435,7 @@
   }
   .pricing-mobile .gallery .pricing-card:nth-child(odd) {
     width: 70%;
-    height: 55vh;
+    height: 52vh;
     /* margin: 20px 0; */
 
     box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.3);
@@ -486,7 +492,7 @@
 
   .pricing-mobile .gallery .gallery-cell {
     width: 70%;
-    height: 55vh;
+    height: 52vh;
     margin-right: 10px;
     background: var(--text-color);
     counter-increment: gallery-cell;
@@ -604,6 +610,18 @@
     opacity: 1;
   }
 
+  /* ================ go green =================  */
+  .go-green .go-green-image-box .go-green-image-box-content {
+    width: 90%;
+  }
+  .go-green .go-green-image-box {
+    /*background: url() no-repeat center center fixed;
+    */
+    /* magical effect  */
+    background: url(../images/UpdatedGoGreenBG.jpg) no-repeat center center
+      fixed;
+  }
+
   /* ================= style of search section============== */
   .searchbar .inner-box .title-box {
     width: 100%;
@@ -640,6 +658,23 @@
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
+  }
+  #pre-register-button {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 12px 17px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 17px;
+    color: var(--bg-color);
+    z-index: 1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
   }
   /* =============== footer section============== */
   footer {
