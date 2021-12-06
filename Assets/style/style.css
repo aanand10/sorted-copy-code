@@ -1467,6 +1467,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.go-green .go-green-image-box .go-green-image-box-content .go-green-phn {
+  /* text-align: center; */
+  display: none;
+}
 .go-green .go-green-image-box {
   height: 70vh;
   width: 85%;

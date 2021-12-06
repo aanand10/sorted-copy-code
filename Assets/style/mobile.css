@@ -621,6 +621,17 @@
     background: url(../images/UpdatedGoGreenBG.jpg) no-repeat center center
       fixed;
   }
+  .go-green .go-green-image-box .go-green-image-box-content {
+    text-align: center;
+  }
+  .go-green .go-green-image-box .go-green-image-box-content .go-green-laptop {
+    display: none;
+  }
+  .go-green .go-green-image-box .go-green-image-box-content .go-green-phn {
+    /* text-align: center; */
+    display: block;
+    /* font-size: var(--text); */
+  }
 
   /* ================= style of search section============== */
   .searchbar .inner-box .title-box {
@@ -646,6 +657,7 @@
   }
   .searchbar .inner-box .bottom-box {
     width: 100%;
+    height: 27%;
   }
   .searchbar .inner-box .search-box:hover {
     transform: scale(1.1);
