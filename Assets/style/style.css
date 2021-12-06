@@ -942,9 +942,9 @@ body {
   .card-front
   .card-title {
   height: 92px;
-  width: 100%;
-  font-size: 25px;
-  font-weight: 450;
+  width: 85%;
+  font-size: var(--subtitle-text);
+  /* font-weight: 450; */
   /* border: #000b4d 3px dotted; */
   color: var(--text-color);
 }
