@@ -450,10 +450,10 @@
   .mobile-features {
     display: block;
     height: 80vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
   .mobile-features .title-box {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 10vh;
     display: flex;
     justify-content: center;

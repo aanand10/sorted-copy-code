@@ -748,7 +748,7 @@ body {
 .mobile-features {
   min-height: 90vh;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -758,8 +758,9 @@ body {
 }
 
 .mobile-features .carousel .carousel-inner {
-  height: 70vh;
-  width: 90%;
+  height: 80vh;
+  height: 376px;
+  width: 80vw;
   /* border: 1px solid rgb(0, 100, 0); */
   display: flex;
   justify-content: center;
@@ -772,7 +773,8 @@ body {
   /* border: #000b4d 3px solid; */
 }
 .mobile-features .carousel .carousel-inner .full-card .card-flip {
-  min-height: 420px;
+  /* min-height: 80vh; */
+  height: 376px;
   width: 285px;
   /*width: 100%;
   */
@@ -783,7 +785,7 @@ body {
   align-items: center;
   /*border: 1px solid rgb(0, 0, 0);
   */
-  margin: 15px;
+  /* margin: 15px; */
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -796,19 +798,19 @@ body {
   -webkit-backdrop-filter: blur(9px);
   border-radius: 10px;
   /*!--------------------------------------------------------*/
-  transform-style: preserve-3d;
-  perspective: 600px;
-  transition: 0.25s;
+  /* transform-style: preserve-3d;
+  perspective: 600px; */
+  /* transition: 0.25s;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
-  -o-transition: 0.25s;
+  -o-transition: 0.25s; */
 }
 .mobile-features .carousel .carousel-inner .full-card:nth-child(1) .card-flip {
-  border-top-left-radius: 100px;
+  border-top-left-radius: 10px;
 }
 .mobile-features .carousel .carousel-inner .full-card:nth-child(4) .card-flip {
-  border-bottom-right-radius: 100px;
+  border-bottom-right-radius: 10px;
 }
 .mobile-features .carousel .carousel-inner .full-card .card-flip .card-front {
   padding-top: -8px;
@@ -820,6 +822,7 @@ body {
   align-items: center;
   text-align: center;
   height: 376px;
+  width: 100%;
   /*!----------------------------------*/
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -838,9 +841,7 @@ body {
 /* .sorted-features .card-container .full-card:hover .card-flip .card-front {
 } */
 
-.mobile-features .carousel .carousel-inner .full-card .card-flip .card-back {
-  /*display: none;
-  */
+/* .mobile-features .carousel .carousel-inner .full-card .card-flip .card-back {
   height: 100%;
   background-color: transparent;
   background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
@@ -863,23 +864,23 @@ body {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-}
-.mobile-features .carousel .carousel-inner .full-card:hover .card-flip {
+} */
+/* .mobile-features .carousel .carousel-inner .full-card:hover .card-flip {
   background-color: transparent;
-}
-.mobile-features .carousel .carousel-inner .full-card:hover .card-flip-first {
+} */
+/* .mobile-features .carousel .carousel-inner .full-card:hover .card-flip-first {
   border-bottom-left-radius: 100px;
   border-top-left-radius: 10px;
-}
-.mobile-features .carousel .carousel-inner .full-card:hover .card-flip-last {
+} */
+/* .mobile-features .carousel .carousel-inner .full-card:hover .card-flip-last {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 100px;
-}
-.mobile-features .carousel .carousel-inner .full-card:hover .card-flip-common {
+} */
+/* .mobile-features .carousel .carousel-inner .full-card:hover .card-flip-common {
   border-bottom-left-radius: 10px;
-  /* border-top-right-radius: 100px; */
-}
-.mobile-features
+  border-top-right-radius: 100px;
+} */
+/* .mobile-features
   .carousel
   .carousel-inner
   .full-card:hover
@@ -890,9 +891,9 @@ body {
   -moz-transform: rotateX(-180deg);
   -ms-transform: rotateX(-180deg);
   -o-transform: rotateX(-180deg);
-}
+} */
 
-.mobile-features
+/* .mobile-features
   .carousel
   .carousel-inner
   .full-card:hover
@@ -908,9 +909,9 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  /* border-bottom-left-radius: 100px; */
-}
-.mobile-features
+  border-bottom-left-radius: 100px;
+} */
+/* .mobile-features
   .carousel
   .carousel-inner
   .full-card:hover
@@ -925,7 +926,7 @@ body {
   .card-flip-last
   .card-back {
   border-top-right-radius: 100px;
-}
+} */
 /* .sorted-features .card-container .full-card:nth-child(1) .card-flip .card-back {
   background-color: #07192f;
   /* height: ; */
