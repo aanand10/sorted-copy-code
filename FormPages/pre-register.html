@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-Registration</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../Assets/style/preRegister.css" />
+    <script>
+      function ClearForm() {
+        document.MyForm.reset();
+      }
+    </script>
+  </head>
+  <body onload="ClearForm()">
+    <section class="pre-register" id="pre-register">
+      <div class="bg-image">
+        <img src="../Assets/images/form-rocket.svg" alt="" />
+      </div>
+      <div class="form-section">
+        <div class="form-title">
+          <h2>Pre-Register Now!!</h2>
+        </div>
+        <div class="form-fields">
+          <div class="name">
+            <div id="lable-field">
+              <label for="firstName"> First Name :</label><br />
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div id="lable-field">
+              <label for="lastName"> Last Name :</label><br />
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact">
+            <div id="lable-field">
+              <label for="email"> E-Mail :</label> <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your@mail.com"
+                required
+              />
+            </div>
+            <div id="lable-field">
+              <label for="mobileNo">Mobile No :</label><br />
+              <input
+                type="number"
+                name="mobileNo"
+                id="mobileNo"
+                placeholder="xxx-xxxx-xxx"
+                required
+              />
+            </div>
+          </div>
+
+          <a href=""><button>Next</button></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

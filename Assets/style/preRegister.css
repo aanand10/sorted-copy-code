@@ -1,0 +1,182 @@
+/* =============== fonts =========  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+:root {
+  /* ======================= font sizing =======================  */
+  --title-text: 35px;
+  --subtitle-text: 25px;
+  --text: 17px;
+
+  /* ======================= Color variables  =======================  */
+  --bg-color: #000000;
+  --text-color: #f2f2f2;
+  --highlight-color: #4452fb;
+  --button-color: #20bdff;
+  --sub-highlight-color: #a5fecb;
+  --card-section-orange: #ff4500;
+  --marquee-highlight: #f9cc44;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.pre-register {
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+.bg-image {
+  position: absolute;
+  top: 60px;
+  z-index: 0;
+}
+.pre-register .form-section {
+  /* border: #a5fecb 1px solid; */
+  width: 45%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+  top: 100px;
+  left: 50%;
+}
+.pre-register .form-section .form-title {
+  /* border: 1px solid red; */
+  /* text-align: center; */
+  margin: 20px 0;
+}
+.pre-register .form-section .form-title h2 {
+  font-size: var(--title-text);
+  color: var(--text-color);
+  height: 6vh;
+  padding: 0 100px;
+  margin-bottom: 40px;
+}
+.pre-register .form-section .form-fields {
+  /* border: 1px solid rgb(0, 255, 255); */
+  height: calc(45vh - 6vh);
+  height: auto;
+  padding: 0 100px;
+}
+.pre-register .form-section .form-fields .name {
+  display: flex;
+  flex-direction: row;
+  /* border: #ff4500 1px solid; */
+}
+.pre-register .form-section .form-fields .name #lable-field {
+  /* border: #20bdff 1px solid; */
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.form-section .form-fields a button {
+  border: none;
+  font-family: sans-serif;
+  font-size: 17px;
+  background: transparent;
+  background-color: #0069d9;
+
+  color: #f2f2f2;
+  /* border: solid 1px rgba(83, 229, 255, 0.582); */
+  padding: 10px;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+  width: 150px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.form-section .form-fields a button:before {
+  content: "»";
+  opacity: 0;
+  margin-left: -15px;
+  transition-duration: 0.2s;
+}
+
+.form-section .form-fields a button:hover:before {
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.form-section .form-fields a button:hover {
+  /* color: black; */
+  background: rgba(0, 0, 0, 0.02);
+  border: solid 1px #72b0f2;
+}
+/* ! form field style  */
+.form-fields label {
+  font-size: var(--text);
+  color: var(--text-color);
+  /* font-size: 1.875rem; */
+  line-height: 1.25rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+input {
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  margin: 2px 0 10px 0;
+}
+input#firstName,
+#lastName {
+  width: 230px;
+  font-size: var(--text);
+  color: #000000;
+  font-weight: 500;
+}
+input#email {
+  width: 400px;
+  font-size: var(--text);
+  color: #000000;
+  font-weight: 500;
+}
+input#mobileNo {
+  width: 230px;
+  font-size: var(--text);
+  color: #000000;
+  font-weight: 500;
+}
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #868d96;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #868d96;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: #868d96;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="text"]:focus {
+  border: solid 1px #72b0f2;
+}
