@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Sort-Ed</title>
+    <!-- styles  -->
+    <link rel="stylesheet" href="Assets/style/style.css" />
+    <link rel="stylesheet" href="Assets/style/nav-style.css" />
+    <link rel="stylesheet" href="Assets/style/mobile.css" />
+  </head>
+  <body>
+    <!-- ====================== navbar ==================  -->
+    <header class="header">
+      <a href="#" class="header__logo">Sort-Ed</a>
+
+      <ion-icon
+        name="menu-outline"
+        class="header__toggle"
+        id="nav-toggle"
+      ></ion-icon>
+
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <ion-icon
+            name="close-outline"
+            class="nav__close"
+            id="nav-close"
+          ></ion-icon>
+
+          <div class="nav__perfil">
+            <div class="nav__img">
+              <img src="assets/img/perfil.png" alt="" />
+            </div>
+
+            <div>
+              <a href="#" class="nav__name">Sort-Ed</a>
+              <!-- <span class="nav__profesion">Web designer</span> -->
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#hero-page" class="nav__link active">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#question-answer" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Register</a>
+              </li>
+              <li class="nav__item">
+                <a href="#p" class="nav__link">Blog</a>
+              </li>
+              <!-- <li class="nav__item">
+                  <a href="#one" class="nav__link">Contact</a>
+                </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ======================= about body ========================== -->
+    <section class="about-body" style="height: 100vh"></section>
+    <!-- ============== footer ============= -->
+    <footer class="footer" id="footer">
+      <div class="footer-wrapper" id="footer-wrapper">
+        <div class="icon-slogen-section">
+          <div class="logo">
+            <h1>Sort-Ed</h1>
+          </div>
+          <div class="slogen">
+            <p>Register now and make your life <strong>Sort-Ed</strong></p>
+
+            <p>Sort-Ed.in 2021</p>
+          </div>
+        </div>
+        <div class="links-section">
+          <div class="links-wrapper">
+            <div class="box-1">
+              <a href="" class="box-1-link">About</a>
+              <a href="" class="box-1-link">Register</a>
+              <a href="" class="box-1-link">Reffral Program</a>
+              <a href="" class="box-1-link">Ambassador Program</a>
+            </div>
+            <div class="box-2">
+              <a href="" class="box-2-link">Terms and Conditions</a>
+              <a href="" class="box-2-link">Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="social-wrapper">
+            <div class="box-1">
+              <p class="box-1-text">Get connected With Us &nbsp;</p>
+              <a class="mail" href="mailto:connect@sorted.in"
+                >connect@sorted.in</a
+              >
+            </div>
+            <div class="box-2">
+              <a href="" class="social-icon"
+                ><img src="images/icons/twitter.svg" alt="" class="social-icon"
+              /></a>
+              <a href="" class="social-icon"
+                ><img
+                  src="images/icons/facebook.svg"
+                  alt=""
+                  class="social-icon"
+              /></a>
+              <a href="" class="social-icon"
+                ><img
+                  src="images/icons/instagram.png"
+                  alt=""
+                  class="social-icon"
+              /></a>
+              <a href="" class="social-icon"
+                ><img src="images/icons/youtube.svg" alt="" class="social-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =============== nav script ================= -->
+    <script>
+      const navMenu = document.getElementById("nav-menu"),
+        toggleMenu = document.getElementById("nav-toggle"),
+        closeMenu = document.getElementById("nav-close");
+
+      /*SHOW*/
+      toggleMenu.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+
+      /*HIDDEN*/
+      closeMenu.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+      });
+
+      /*===== ACTIVE AND REMOVE MENU =====*/
+      const navLink = document.querySelectorAll(".nav__link");
+
+      function linkAction() {
+        /*Active link*/
+        navLink.forEach((n) => n.classList.remove("active"));
+        this.classList.add("active");
+
+        /*Remove menu mobile*/
+        navMenu.classList.remove("show");
+      }
+      navLink.forEach((n) => n.addEventListener("click", linkAction));
+    </script>
+    <script type="text/javascript">
+      $(".btn").on("click", function () {
+        $(".menu").toggleClass("show");
+      });
+    </script>
+  </body>
+</html>
