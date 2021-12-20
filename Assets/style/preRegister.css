@@ -133,14 +133,15 @@ input {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
-input#firstName,
+input,
 #lastName {
   width: 230px;
   font-size: var(--text);
   color: #000000;
   font-weight: 500;
 }
-input#email {
+input#email,
+#college {
   width: 400px;
   font-size: var(--text);
   color: #000000;
@@ -151,6 +152,35 @@ input#mobileNo {
   font-size: var(--text);
   color: #000000;
   font-weight: 500;
+}
+
+#PrePublication {
+  width: 230px;
+
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: var(--text);
+  color: #000000;
+  font-weight: 500;
+}
+
+.name,
+.radio,
+.contact,
+.Current-sem {
+  margin-top: 13px;
+}
+.pre-register .form-fields .button {
+  margin-top: 40px;
+}
+textarea {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 ::-webkit-input-placeholder {
   /* Edge */
@@ -183,4 +213,30 @@ input[type="number"] {
 }
 input[type="text"]:focus {
   border: solid 1px #72b0f2;
+}
+
+/* radio field  */
+.form-fields .radio .radio-container {
+  display: flex;
+  /* border: #0069d9 1px solid; */
+  justify-content: left;
+  align-items: center;
+}
+.form-fields .radio .radio-container p {
+  font-size: var(--text);
+  width: 350px;
+  /* border: #72b0f2 1px solid; */
+}
+.form-fields .radio .radio-container input.checkbox {
+  width: 20px;
+  height: 20px;
+  /* margin-left: -130px; */
+  margin-bottom: -2px;
+}
+
+/*! ======== early access whatsapp page style =============== */
+.pre-register .form-section .form-fields .name .lable-field input.whatsapp-no {
+}
+.pre-register .form-section .form-fields .contact .radio .radio-container p {
+  margin: 10px 0;
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp Info</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../Assets/style/preRegister.css" />
+    <script>
+      function ClearForm() {
+        document.MyForm.reset();
+      }
+    </script>
+  </head>
+  <body onload="ClearForm()">
+    <section class="pre-register" id="pre-register">
+      <div class="bg-image">
+        <img src="../Assets/images/form-rocket.svg" alt="" />
+      </div>
+      <div class="form-section">
+        <!-- <div class="form-title">
+          <h2>Pre-Register Now!!</h2>
+        </div> -->
+        <div class="form-fields">
+          <div class="name">
+            <div id="lable-field">
+              <label for="firstName"> Whatsapp Number :</label>
+              <input style=" width: 370px !important;"
+                type="text"
+                class="whatsapp-no"
+                name="whatsapp"
+                id="firstName"
+                placeholder="Your whatsapp number"
+                required
+              />
+            </div>
+            <!-- <div id="lable-field">
+              <label for="lastName"> Last Name :</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div> -->
+          </div>
+          <div class="contact">
+            <div class="radio">
+                <label class="radio-container"
+                  ><p>Will you like to receive surveys and updates?</p>
+                  <input type="checkbox" class="checkbox" />
+                  <!-- <span class="checkmark"></span> -->
+                </label>
+              </div><div class="radio">
+                <label class="radio-container"
+                  ><p>Will you like to be part of product testing?</p>
+                  <input type="checkbox" class="checkbox" />
+                  <!-- <span class="checkmark"></span> -->
+                </label>
+              </div><div class="radio">
+                <label class="radio-container"
+                  ><p>Agree terms & conditions</p>
+                  <input type="checkbox" class="checkbox" />
+                  <!-- <span class="checkmark"></span> -->
+                </label>
+              </div>
+          <a href="./ThanksPage.html"><button>Next</button></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

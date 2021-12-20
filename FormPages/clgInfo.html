@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-Registration</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../Assets/style/preRegister.css" />
+    <script>
+      function ClearForm() {
+        document.MyForm.reset();
+      }
+    </script>
+  </head>
+  <body onload="ClearForm()">
+    <section class="pre-register" id="pre-register">
+      <div class="bg-image">
+        <img src="../Assets/images/form-rocket.svg" alt="" />
+      </div>
+      <div class="form-section">
+        <!-- <div class="form-title">
+          <h2>Pre-Register Now!!</h2>
+        </div> -->
+        <div class="form-fields">
+          <div class="contact">
+            <div id="lable-field">
+              <label for="college"> College :</label> <br />
+              <input
+                type="text"
+                name="college"
+                id="college"
+                placeholder="Your College "
+                required
+              />
+            </div>
+            <!-- <div id="lable-field">
+              <label for="mobileNo">Mobile No :</label><br />
+              <input
+                type="number"
+                name="mobileNo"
+                id="mobileNo"
+                placeholder="xxx-xxxx-xxx"
+                required
+              />
+            </div> -->
+          </div>
+          <div class="name">
+            <div id="lable-field">
+              <label for="Branch"> Branch :</label>
+              <input
+                type="text"
+                name="Branch"
+                id="Branch"
+                placeholder="Your Branch"
+                required
+                style="width: 185px"
+              />
+            </div>
+            <div id="lable-field">
+              <label for="Current-sem"> Current semester :</label>
+              <input
+                type="text"
+                name="Current-sem"
+                id="Current-sem"
+                placeholder="Your current semester"
+                required
+                style="width: 185px"
+              />
+            </div>
+          </div>
+          <div class="radio">
+            <label class="radio-container"
+              ><p>Residing / planning to in College Hostel?</p>
+              <input type="checkbox" class="checkbox" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+          </div>
+          <div class="contact">
+            <div id="lable-field">
+              <label for="Address">Residence Address : </label> <br />
+              <textarea
+                type="text"
+                name="Address"
+                id="Address"
+                placeholder="Your Address "
+                rows="4"
+                cols="50"
+                required
+              ></textarea>
+            </div>
+            <div style="margin-top: 20px" id="Current-sem" class="Current-sem">
+              <label for="Current-sem"> Preferred Publication :</label> <br />
+              <select name="PrePublication" id="PrePublication">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <!-- <input
+                type="text"
+                name="PrePublication"
+                id="PrePublication"
+                placeholder="Preferred Publication"
+                required
+                style="width: 185px"
+              /> -->
+            </div>
+          </div>
+          <a href="ThanksPage.html" class="button"><button>Next</button></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
