@@ -113,7 +113,7 @@ body {
   border: solid 1px #72b0f2;
 }
 /* ! form field style  */
-.form-fields label {
+.form-fields .lable {
   font-size: var(--text);
   color: var(--text-color);
   /* font-size: 1.875rem; */
@@ -121,7 +121,7 @@ body {
   font-weight: 500;
   margin: 5px 0;
 }
-input {
+.input-field {
   padding-top: 0.5rem;
   padding-right: 0.75rem;
   padding-bottom: 0.5rem;
@@ -133,28 +133,28 @@ input {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
-input,
+.input-field,
 #lastName {
   width: 230px;
   font-size: var(--text);
   color: #000000;
   font-weight: 500;
 }
-input#email,
+.input-field#email,
 #college {
   width: 400px;
   font-size: var(--text);
   color: #000000;
   font-weight: 500;
 }
-input#mobileNo {
+.input-field#mobileNo {
   width: 230px;
   font-size: var(--text);
   color: #000000;
   font-weight: 500;
 }
 
-#PrePublication {
+.PrePublication {
   width: 230px;
 
   padding-top: 0.5rem;
@@ -175,7 +175,7 @@ input#mobileNo {
 .pre-register .form-fields .button {
   margin-top: 40px;
 }
-textarea {
+.textarea {
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -196,22 +196,22 @@ textarea {
   font-weight: 500;
 }
 
-::placeholder {
-  color: #868d96;
-  line-height: 1.25rem;
+.input-field::placeholder {
+  color: #8f8f8f;
+  font-size: 1rem;
   font-weight: 500;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.input-field::-webkit-outer-spin-button,
+.input-field::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Firefox */
-input[type="number"] {
+.input-field[type="number"] {
   -moz-appearance: textfield;
 }
-input[type="text"]:focus {
+.input-field[type="text"]:focus {
   border: solid 1px #72b0f2;
 }
 
@@ -227,7 +227,7 @@ input[type="text"]:focus {
   width: 350px;
   /* border: #72b0f2 1px solid; */
 }
-.form-fields .radio .radio-container input.checkbox {
+.form-fields .radio .radio-container .checkbox {
   width: 20px;
   height: 20px;
   /* margin-left: -130px; */
@@ -235,7 +235,12 @@ input[type="text"]:focus {
 }
 
 /*! ======== early access whatsapp page style =============== */
-.pre-register .form-section .form-fields .name .lable-field input.whatsapp-no {
+.pre-register
+  .form-section
+  .form-fields
+  .name
+  .lable-field
+  .input-field.whatsapp-no {
 }
 .pre-register .form-section .form-fields .contact .radio .radio-container p {
   margin: 10px 0;
