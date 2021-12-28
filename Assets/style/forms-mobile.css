@@ -1,0 +1,93 @@
+/* !===================================== responsive css =========================================*/
+/* root prop  */
+:root {
+  /* ======================= font sizing =======================  */
+  --title-text: 35px;
+  --subtitle-text: 25px;
+  --text: 17px;
+
+  /* ======================= Color variables  =======================  */
+  --bg-color: #000000;
+  --text-color: #f2f2f2;
+  --highlight-color: #4452fb;
+  --button-color: #20bdff;
+  --sub-highlight-color: #a5fecb;
+  --card-section-orange: #ff4500;
+  --marquee-highlight: #f9cc44;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 800px) {
+  /* ==========  pre-register page ==========  */
+  .pre-register {
+    border: 1px solid white;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #000000;
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #222227 90px
+      ),
+      repeating-linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.616));
+  }
+  .pre-register .bg-image {
+    display: none;
+  }
+  .pre-register .form-section {
+    /* border: #a5fecb 1px solid; */
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    /* top: 100px; */
+    left: 0;
+    /* border: 1px solid white; */
+  }
+  .pre-register .form-section .form-title {
+    /* border: 1px solid red; */
+    margin: 40px auto;
+    text-align: center;
+    height: 4vh;
+  }
+  .pre-register .form-section .form-title h2 {
+    font-size: 40px;
+    color: var(--text-color);
+    /* height: 2vh; */
+    padding: 0 15px;
+
+    /* margin-bottom: 40px; */
+  }
+  .pre-register .form-section .form-fields {
+    /* border: 1px solid rgb(0, 255, 255); */
+    height: auto;
+    padding: 0px 15px;
+  }
+  .pre-register .form-section .form-fields .name {
+    display: flex;
+    flex-direction: row;
+    /* border: #ff4500 1px solid; */
+  }
+  .pre-register .form-section .form-fields .name #lastName,
+  #firstName {
+    width: 110%;
+  }
+  .pre-register .form-section .form-fields .contact #lable-field #email {
+    width: 96%;
+  }
+  .form-section .form-fields a {
+    margin: 0 auto;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+}

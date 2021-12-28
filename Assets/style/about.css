@@ -261,17 +261,10 @@ html {
   /* display: flex; */
   height: 80vh;
   width: 50%;
-  /* border: 2px solid white; */
-  /* margin: 150px 10px; */
-  /* padding: 100px; */
-  /* justify-content: center;
-  align-items: center; */
 }
 .reachus-main-container .reachus-image-container {
   height: 80vh;
   width: 50%;
-  /* border: 2px solid white; */
-  /* margin: 150px 10px; */
 }
 .reachus-main-container .reachus-image-container .reachus-image {
   height: 100%;
@@ -290,20 +283,15 @@ html {
   flex-direction: row;
 }
 .reachus-main-container .reachus-content-container .reachus-container {
-  /* border: 10px solid blueviolet; */
   height: 80%;
   width: 80%;
   margin: 50px auto;
-  /* padding: 50px 0; */
 }
 .reachus-main-container .reachus-content-container .reachus-container h2 {
-  /* border: 2px solid darkgray; */
   text-align: center;
   font-size: var(--title-text);
   margin: 25px 0;
   width: 50%;
-  /*   display: flex; */
-  /* justify-content: right; */
 }
 .reachus-main-container
   .reachus-content-container
@@ -316,7 +304,6 @@ html {
   .reachus-content-container
   .reachus-container
   .reachus-mail {
-  /* border: 2px solid darksalmon; */
   padding-left: 16rem;
   margin: 30px 0;
 }
@@ -357,6 +344,40 @@ html {
   .reachus-container
   .reachus-socialmedia
   a {
-  /* border: 3px solid darkturquoise; */
   margin: 15px;
+}
+
+button style .form-section .form-fields .button {
+  border: none;
+  font-family: sans-serif;
+  font-size: 17px;
+  background: transparent;
+  background-color: #0069d9;
+  color: #f2f2f2;
+
+  padding: 10px;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+  width: 150px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.form-section .form-fields .button::before {
+  content: "»";
+  color: white;
+  opacity: 0;
+  margin-left: -15px;
+  transition-duration: 0.2s;
+}
+
+.form-section .form-fields .button:hover:before {
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.form-section .form-fields .button:hover {
+  /* color: black; */
+  background: rgba(0, 0, 0, 0.02);
+  border: solid 1px #72b0f2;
 }
