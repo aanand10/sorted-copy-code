@@ -116,12 +116,16 @@ html {
       ),
       repeating-linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.616));
   }
+  .thanksPage .main-container {
+    width: 100%;
+    padding: 0 3%;
+  }
   .thanksPage .main-container .img-box {
     display: none;
   }
   .thanksPage .main-container .field-box {
     width: 100%;
-    height: auto;
+    height: 70%;
     z-index: 1;
     position: relative;
     /* top: 100px; */
@@ -153,5 +157,22 @@ html {
   }
   .main-container .field-box {
     padding: 0 4%;
+  }
+  .early-access .form-section .form-title h2 {
+    font-size: var(--title-text);
+  }
+
+  /* ============ oops sorry =============  */
+  .oops-sorry .main-container .field-box .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  /* ========== congrats ==============  */
+  .thanksPage .main-container .field-box .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .thanksPage .main-container .field-box {
+    padding: 0;
   }
 }
