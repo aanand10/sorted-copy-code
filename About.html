@@ -261,16 +261,19 @@
     <!-- =================== Feedback ================ -->
     <section class="feedback" id="feedback">
       <div class="feedback-container">
-        <div class="image-container"><img src="" alt="" /></div>
+        <div class="image-container">
+          <img src="Assets/aboout-images/Feedback-amico.svg" alt="" />
+        </div>
         <div class="feedback-form">
           <div class="title">
             <h2>
               Have Feedback/Suggestions? <br />
               We'll Love To Hear About It.
             </h2>
+          </div>
             <div class="feedback-form-fields">
               <div id="lable-field">
-                <label class="lable" for="firstName"> Name :</label>
+                <label class="lable" for="firstName"> Name :</label> <br>
                 <input
                   class="input-field"
                   type="text"
@@ -303,9 +306,18 @@
                   <option value="audi">Audi</option>
                 </select>
               </div>
-
-
-            </div>
+              <div id="lable-field">
+                <label class="lable" for="feedback-text"> Feedback Text:</label> <br />
+                <textarea
+                  class="input-field"
+                  type="text"
+                  name="feedback-text"
+                  id="feedback-text"
+                  placeholder="Type your feedback!"
+                  required
+                > </textarea>
+              </div>
+              <button id="submitbutton-feedback" type="submit">Submit</button>
             </div>
           </div>
         </div>

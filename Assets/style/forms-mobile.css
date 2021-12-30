@@ -90,4 +90,11 @@ html {
     width: 100%;
     /* border: 2px solid red; */
   }
+  /* ==========  College info  ==========  */
+  .input-field#college {
+    width: 382px;
+    font-size: var(--text);
+    color: #000000;
+    font-weight: 500;
+  }
 }
