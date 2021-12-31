@@ -345,7 +345,7 @@
           </div>
             <div class="feedback-form-fields">
               <div id="lable-field">
-                <label class="lable" for="firstName"> Name :</label> <br>
+                
                 <input
                   class="input-field"
                   type="text"
@@ -354,9 +354,6 @@
                   placeholder="Name"
                   required
                 />
-              </div>
-              <div id="lable-field">
-                <label class="lable" for="email"> E-Mail :</label> <br />
                 <input
                   class="input-field"
                   type="email"
@@ -365,13 +362,20 @@
                   placeholder="your@mail.com"
                   required
                 />
+                <input
+                  class="input-field feedback"
+                  type="text"
+                  name="feedback-text"
+                  id="feedback-text"
+                  placeholder="Feedback"
+                  required
+                /> 
               </div>
-              <div style="margin-top: 20px" id="Current-sem"   class="feedback-select">
-                <label class="lable" for="Current-sem">
-                  Feedback :</label
-                >
-                <br />
-                <select name="Current-sem" class="PrePublication">
+             
+              <!-- <div style="margin-top: 20px" id="Current-sem"   class="feedback-select">
+                
+                <select  placeholder="your@mail.com" name="Current-sem" class="PrePublication">
+                  <option label="Select your city">Select your city</option>
                   <option value="volvo">Volvo</option>
                   <option value="saab">Saab</option>
                   <option value="mercedes">Mercedes</option>
@@ -380,15 +384,8 @@
               </div>
               <div id="lable-field">
                 <label class="lable" for="feedback-text"> Feedback Text:</label> <br />
-                <textarea
-                  class="input-field"
-                  type="text"
-                  name="feedback-text"
-                  id="feedback-text"
-                  placeholder="Type your feedback!"
-                  required
-                > </textarea>
-              </div>
+                
+              </div> -->
               <button id="submitbutton-feedback" type="submit">Submit</button>
             </div>
           </div>

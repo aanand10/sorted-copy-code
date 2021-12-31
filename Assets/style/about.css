@@ -429,7 +429,8 @@ html {
   /* background-color: red; */
 }
 
-============== feedback form field =============== */ .feedback {
+/* ============== feedback form field =============== */
+.feedback {
   height: 100vh;
   width: 100%;
   border: 1px solid wheat;
@@ -473,6 +474,15 @@ html {
   height: 80%;
   width: 100%;
   border: 1px solid rgb(255, 0, 0);
+}
+.feedback
+  .feedback-container
+  .feedback-form
+  .feedback-form-fields
+  #lable-field
+  input::placeholder {
+  color: #0069d9;
+  font-size: var(--text);
 }
 /* ================ button style =============  */
 .form-section .form-fields .button {
