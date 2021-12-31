@@ -345,7 +345,11 @@ html {
   padding: 0px;
   /* width: 300px; */
 }
-.reachus-main-container .reachus-content-container .reachus-container .reachus-location p{
+.reachus-main-container
+  .reachus-content-container
+  .reachus-container
+  .reachus-location
+  p {
   /* border: 1px solid white; */
   /* height: 100px;
   width: 500px; */
@@ -447,18 +451,18 @@ html {
 .feedback {
   height: 100vh;
   width: 100%;
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
 }
 .feedback .feedback-container {
   height: 100vh;
   width: 100%;
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .feedback .feedback-container .image-container {
   width: 50%;
   height: 100vh;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -468,7 +472,7 @@ html {
   width: auto;
 }
 .feedback .feedback-container .feedback-form {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   height: 100%;
   width: 50%;
   display: flex;
@@ -479,15 +483,25 @@ html {
 .feedback .feedback-container .feedback-form .title {
   height: 20%;
   width: 100%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 .feedback .feedback-container .feedback-form .title h2 {
   margin-top: 7%;
+  font-size: var(--title-text);
 }
 .feedback .feedback-container .feedback-form .feedback-form-fields {
-  height: 80%;
+  /* height: 80%; */
   width: 100%;
-  border: 1px solid rgb(255, 0, 0);
+  height: 70%;
+  /* border: 1px solid limegreen; */
+}
+.feedback
+  .feedback-container
+  .feedback-form
+  .feedback-form-fields
+  #lable-field {
+  display: flex;
+  flex-direction: column;
 }
 .feedback
   .feedback-container
@@ -495,9 +509,38 @@ html {
   .feedback-form-fields
   #lable-field
   input::placeholder {
-  color: #0069d9;
+  color: #000000;
+  font-weight: 600;
   font-size: var(--text);
 }
+.feedback
+  .feedback-container
+  .feedback-form
+  .feedback-form-fields
+  #lable-field
+  input {
+  padding-top: 0.8rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.75rem;
+  margin: 25px 0 25px 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  width: 80%;
+}
+.feedback
+  .feedback-container
+  .feedback-form
+  .feedback-form-fields
+  #lable-field
+  input#feedback-text {
+  height: auto;
+  /* color: aqua; */
+}
+
 /* ================ button style =============  */
 .form-section .form-fields .button {
   border: none;
