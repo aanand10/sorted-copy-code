@@ -261,10 +261,17 @@ html {
   /* display: flex; */
   height: 80vh;
   width: 50%;
+  /* border: 2px solid white; */
+  /* margin: 150px 10px; */
+  /* padding: 100px; */
+  /* justify-content: center;
+  align-items: center; */
 }
 .reachus-main-container .reachus-image-container {
   height: 80vh;
   width: 50%;
+  /* border: 2px solid white; */
+  /* margin: 150px 10px; */
 }
 .reachus-main-container .reachus-image-container .reachus-image {
   height: 100%;
@@ -273,6 +280,7 @@ html {
 .reachus-main-container .reachus-content-container .reachus-mail {
   display: flex;
   flex-direction: row;
+  /* border: 2px solid white; */
 }
 .reachus-main-container .reachus-content-container .reachus-call {
   display: flex;
@@ -283,15 +291,21 @@ html {
   flex-direction: row;
 }
 .reachus-main-container .reachus-content-container .reachus-container {
+  /* border: 10px solid blueviolet; */
   height: 80%;
   width: 80%;
   margin: 50px auto;
+  /* align-items: flex-end; */
+  /* padding: 50px 0; */
 }
 .reachus-main-container .reachus-content-container .reachus-container h2 {
+  /* border: 2px solid darkgray; */
   text-align: center;
   font-size: var(--title-text);
   margin: 25px 0;
   width: 50%;
+  /*   display: flex; */
+  /* justify-content: right; */
 }
 .reachus-main-container
   .reachus-content-container
@@ -304,29 +318,39 @@ html {
   .reachus-content-container
   .reachus-container
   .reachus-mail {
-  padding-left: 16rem;
-  margin: 30px 0;
+  /* border: 2px solid darksalmon; */
+  /* padding-left: 16rem; */
+  margin: 25px 0;
+  justify-content: end;
 }
 .reachus-main-container
   .reachus-content-container
   .reachus-container
   .reachus-call {
-  margin: 30px 0;
-  padding-left: 16rem;
+  margin: 25px 0;
+  /* padding-left: 16rem; */
+  justify-content: end;
+  /* border: 2px solid darksalmon; */
 }
 .reachus-main-container
   .reachus-content-container
   .reachus-container
   .reachus-location {
-  margin: 30px 0;
-  padding-left: 16rem;
+  margin: 25px 0;
+  /* padding-left: 16rem; */
+  justify-content: end;
+  /* border: 2px solid darksalmon; */
+  height: 100px;
+  padding: 0px;
+  /* width: 300px; */
 }
 .reachus-main-container
   .reachus-content-container
   .reachus-container
   .reachus-socialmedia {
-  margin: 30px 0;
-  padding-left: 15rem;
+  /* border: 2px solid white; */
+  margin: 25px 0;
+  padding-left: 164px;
 }
 .reachus-main-container .reachus-content-container .reachus-container p {
   padding-left: 30px;
@@ -344,10 +368,68 @@ html {
   .reachus-container
   .reachus-socialmedia
   a {
-  margin: 15px;
+  /* border: 3px solid darkturquoise; */
+  margin: 13px;
+  /* padding-right: 10px; */
 }
-/* ============== feedback form field =============== */
-.feedback {
+.reachus-main-container .reachus-content-container .reachus-container img {
+  /* border: 2px solid white ; */
+  height: 50px;
+  width: 50px;
+}
+.reachus-main-container
+  .reachus-content-container
+  .reachus-container
+  .reachus-icon {
+  /* border: 2px solid blue; */
+  margin-right: 5rem;
+}
+.reachus-main-container
+  .reachus-content-container
+  .reachus-container
+  .reachus-location
+  .reachus-icon {
+  /* border: 1px solid white; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.reachus-main-container
+  .reachus-content-container
+  .reachus-container
+  .reachus-text {
+  /* border: 2px solid red; */
+  display: flex;
+  /* justify-content: end; */
+  width: 300px;
+  justify-content: center;
+}
+/* ======================= Sticky Icons =================== */
+.sticky-social-icons {
+  /* border: 1px solid white; */
+  width: 60px;
+  height: 280px;
+  /* background-color: gray; */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  position: fixed;
+  top: 35%;
+  z-index: 100;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px;
+  /* border: 5px solid transparent; */
+  /* margin: 10px; */
+  /* padding: 10px; */
+  outline: 4px solid #70e2a9;
+}
+.sticky-social-icons .sticky-container {
+  /* margin: 5px 5px 50px 0; */
+}
+.sticky-social-icons .sticky-icons a img {
+  /* background-color: red; */
+}
+
+============== feedback form field =============== */ .feedback {
   height: 100vh;
   width: 100%;
   border: 1px solid wheat;
