@@ -192,7 +192,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/Assets/aboout-images/about-bg.svg");
+  background-image: url("Assets/aboout-images/about-bg.svg");
   background-repeat: no-repeat, repeat;
   background-color: #cccccc;
   color: var(--bg-color);
