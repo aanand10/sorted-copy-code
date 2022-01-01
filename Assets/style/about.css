@@ -33,7 +33,7 @@ html {
   padding-top: 10vh;
 }
 .main-container {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 .about-image {
@@ -53,21 +53,24 @@ html {
 .about-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 10px;
-  margin: 10px;
-  height: 60vh;
+  margin: -55px 10px 10px 10px;
+  min-height: 60vh;
+  max-height: auto;
   width: auto;
   padding: 0 10%;
 }
 .about-content * {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 .about-content h2 {
   /* border: 2px solid red; */
-  font-size: var(--subtitle-text);
+  font-size: var(--title-text);
   /* margin: 10px; */
+  
 }
 .about-content p {
   /* border: 2px solid blue; */

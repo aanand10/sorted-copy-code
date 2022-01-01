@@ -39,6 +39,9 @@
     height: 100%;
     width: 100%;
   }
+  .about-content *{
+    margin: 5px 0;
+  }
   .about-container .main-container .about-content {
     margin: 0px;
     padding: 0 10px;
@@ -326,7 +329,7 @@
   /* ======================= Sticky Icons ==================== */
   .sticky-social-icons {
     transform: scale(0.6);
-    top: 30%;
+    top: 50%;
     height: auto;
   }
   .sticky-social-icons .sticky-container .sticky-icons{
@@ -397,3 +400,34 @@
     width: 100%;
   }
 }
+/* +++++++++++++++++++ Small Display Phones ++++++++++++++++++++++ */
+@media screen and (max-width:360px){
+  .about-container {
+    /* border: 1px solid red; */
+    /* margin-bottom: 30px; */
+    min-height: 110vh;
+    max-height: auto;
+    /* margin-bottom: 50px; */
+  }
+  .about-container .main-container .about-content p:nth-child(4){
+    /* border: 1px solid white; */
+  }
+  .about-container .main-container .about-content{
+    margin-top: 30px;
+    min-height: 60vh;
+    max-height: auto;
+  }
+  .vision-container .main-vision-container .mission-content .test h2{
+    padding: 15px;
+  }
+  .reachus-main-container .reachus-content-container .reachus-container{
+    margin: 30px 35px 30px 35px;
+  }
+  .feedback .feedback-container .feedback-form .feedback-form-fields{
+    margin: 30px 0;
+  }
+  .feedback{
+    min-height: 105vh;
+  }
+  }
+
