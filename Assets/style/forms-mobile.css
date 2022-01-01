@@ -191,4 +191,13 @@ html {
 /* +++++++++++++++++++ Very Small Display Phones ++++++++++++++++++++++ */
 
 @media screen and (max-width: 330px) {
+  /* ========== congrats ========== */
+  .thanksPage .main-container .field-box .buttons a {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    margin-right: -30px;
+  }
 }
