@@ -241,6 +241,7 @@ body {
   .name
   .lable-field
   .input-field.whatsapp-no {
+  width: 90%;
 }
 .pre-register .form-section .form-fields .contact .radio .radio-container p {
   margin: 10px 0;

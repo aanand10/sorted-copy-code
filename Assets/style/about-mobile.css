@@ -495,13 +495,17 @@ background-size: 10px 10px;
     height: 25px;
     width: 25px;
   }
-  .reachus-main-container .reachus-content-container .reachus-container .reachus-text p{
+  .reachus-main-container
+    .reachus-content-container
+    .reachus-container
+    .reachus-text
+    p {
     font-size: 16px;
   }
-  .feedback{
+  .feedback {
     height: 110vh;
   }
-  .feedback .feedback-container .image-container{
+  .feedback .feedback-container .image-container {
     margin-top: 50px;
   }
   .feedback .feedback-container .feedback-form .title h2 {
