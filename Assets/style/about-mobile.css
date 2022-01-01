@@ -33,7 +33,7 @@
     margin: 0;
   }
   .about-container .main-container .about-image {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
   }
   .about-container .main-container .about-image img {
     margin: 0px;
@@ -281,5 +281,60 @@
       transform: scale(0.8);
       top: 60%;
     }
+
+  /* ======================== Feedback Section =================== */
+  .feedback{
+    min-height: 100vh;
+    max-height: auto;
+    /* border: 1px solid green; */
+  }
+  .feedback .feedback-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .feedback .feedback-container .image-container{
+    /* border: 1px solid white; */
+    min-height: 50vh;
+    max-height: auto;
+    width: 100%;
+  }
+  .feedback .feedback-container .feedback-form{
+    /* border: 1px solid blue; */
+    min-height: 50vh;
+    max-height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .feedback .feedback-container .feedback-form .title h2{
+    /* border: 1px solid yellow; */
+    font-size: 30px;
+    margin: 0px;
+  }
+  .feedback .feedback-container .feedback-form .feedback-form-fields{
+    /* border: 1px solid red; */
+    min-height: 40vh;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    
+    /* margin: 20px 0; */
+  }
+  .feedback .feedback-container .feedback-form .feedback-form-fields #lable-field{
+   width: 80%; 
+   justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+  }
+  .feedback .feedback-container .feedback-form .feedback-form-fields #lable-field .input-field{
+      margin: 10px;
+      width: 100%;
+  }
   }
   
