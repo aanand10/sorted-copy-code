@@ -1,0 +1,261 @@
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+    .header {
+      display: none;
+    } 
+    .about-container {
+      /* border: 2px solid red; */
+      height: 100vh;
+      width: 100%;
+      /* margin: 0; */
+      padding-top: 4vh;
+      height: 100vh;
+      width: 100%;
+    }
+    .about-container .main-container {
+      margin: 0;
+    }
+    .about-container .main-container .about-image {
+      /* border: 2px solid blue; */
+      height: 40vh;
+    }
+    .about-container .main-container .about-image img {
+      margin: 0px;
+      height: 100%;
+      width: 100%;
+    }
+    .about-container .main-container .about-content {
+      margin: 0px;
+      padding: 0 10px;
+      height: 60vh;
+      /* border: 1px solid white; */
+    }
+    .about-container .main-container .about-content h2 {
+      font-size: 40px;
+    }
+    .about-container .main-container .about-content h2:nth-child(2) {
+      font-size: 30px;
+    }
+    .about-container .main-container .about-content p {
+      font-size: 20px;
+    }
+    /* ================ Vision & Mission ================= */
+    .vision-container {
+      /* border: 2px solid white; */
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+    }
+    .vision-container .main-vision-container {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    .vision-container .main-vision-container .vision-content {
+      /* border: 2px solid blue; */
+      height: 40vh;
+    }
+    .vision-container .main-vision-container .vision-content .vision-text {
+      width: 50%;
+      /* text-align: center; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .vision-container .main-vision-container .vision-content .vision-text h2 {
+      display: flex;
+      flex-direction: column;
+      font-size: var(--title-text);
+      padding: 20px;
+    }
+    .vision-container .main-vision-container .vision-content .vision-text p {
+      display: flex;
+      flex-direction: column;
+      font-size: var(--text);
+    }
+    .vision-container
+      .main-vision-container
+      .vision-content
+      .vision-image
+      .vision-img {
+      padding: 0;
+    }
+    .vision-container .main-vision-container .mission-content {
+      display: flex;
+      flex-direction: row;
+      height: 40vh;
+    }
+    .vision-container .main-vision-container .mission-content .mission-image {
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* border: 2px solid green; */
+    }
+    .vision-container .main-vision-container .mission-content .test {
+      display: flex;
+      padding: 0px 10px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .vision-container .main-vision-container .mission-content .test h2 {
+      padding: 20px;
+      font-size: var(--title-text);
+    }
+    .vision-container .main-vision-container .mission-content .test p {
+      font-size: var(--text);
+      /* line-height: 20px; */
+    }
+    /* ================= Go Green Section ============== */
+    .gogreen-main-container {
+      height: 100vh;
+      padding: 0 10px;
+    }
+    .gogreen-main-container .gogreen-container {
+      padding: 0 25px;
+    }
+    .gogreen-main-container .gogreen-container {
+      height: 70%;
+      width: 70%;
+      border-radius: 20px;
+    }
+    .gogreen-main-container .gogreen-container h2 {
+      font-size: var(--title-text);
+      margin-top: 10px;
+    }
+    .gogreen-main-container .gogreen-container p {
+      font-size: var(--text);
+    }
+    .gogreen-main-container .gogreen-container .span {
+      font-size: var(--title-text);
+    }
+    /* =================== Reach us Section ================== */
+    .reachus-main-container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+    .reachus-main-container .reachus-image-container {
+      height: 50vh;
+      width: 100%;
+    }
+    .reachus-main-container .reachus-image-container img {
+      height: 90%;
+      width: 90%;
+    }
+    .reachus-main-container .reachus-content-container {
+      height: 50vh;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container h2 {
+      width: 100%;
+      margin: 0px;
+    }
+    .reachus-main-container
+      .reachus-content-container
+      .reachus-container
+      .reachus-mail {
+      padding: 0px;
+      margin: 0px;
+    }
+    .reachus-main-container
+      .reachus-content-container
+      .reachus-container
+      .reachus-call {
+      padding: 0px;
+      margin: 0px;
+    }
+    .reachus-main-container
+      .reachus-content-container
+      .reachus-container
+      .reachus-location {
+      padding: 0px;
+      margin: 0px;
+    }
+    .reachus-main-container
+      .reachus-content-container
+      .reachus-container
+      .reachus-socialmedia {
+      padding-left: 122px;
+      margin: 0px;
+      display: flex;
+      /* justify-content: center; */
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-title h2{
+      font-size: var(--title-text);
+      margin: 10px;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-icon a img{
+      /* border: 1px solid white; */
+      height: 30px;
+      width: 30px;
+      margin-left: 12px;
+      /* margin: 0px; */
+      /* padding-left: 10px; */
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-socialmedia a img{
+      /* border: 1px solid white; */
+      height: 30px;
+      width: 30px;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-icon a{
+      margin: 0px;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-icon img{
+      height: 100%;
+      width: 100%;
+      /* background-color: white; */
+      /* margin-left: 10px; */
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-location{
+      
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-text p{
+      /* border: 1px solid red; */
+      font-size: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-socialmedia a{
+      margin: 11px;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-text{
+      justify-content: flex-start;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-mail{
+      /* border: 1px solid white; */
+      margin: 25px 0;
+      justify-content: center;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-call{
+      /* border: 1px solid white; */
+      margin: 25px 0;
+      justify-content: center;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-location{
+      /* border: 1px solid white; */
+      margin: 25px 0;
+      justify-content: center;
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-socialmedia{
+      /* border: 1px solid white; */
+      margin: 25px 0;
+      /* justify-content: center; */
+    }
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-icon{
+      margin-right: 2rem;
+    } 
+    .reachus-main-container .reachus-content-container .reachus-container .reachus-location{
+      height: 40px;
+    }
+    
+  /* ================== Sticky Icons ==================== */
+    .sticky-social-icons {
+      transform: scale(0.8);
+      top: 60%;
+    }
+  }
+  

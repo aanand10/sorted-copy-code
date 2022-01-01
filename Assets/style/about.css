@@ -1,4 +1,4 @@
-@@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 html {
   scroll-behavior: smooth;
   font-family: "Source Sans Pro", sans-serif;
@@ -78,20 +78,23 @@ html {
 .vision-container {
   display: flex;
   min-height: 100vh;
+  max-height: auto;
   width: 100%;
 }
 .vision-container .main-vision-container {
   display: flex;
   flex-direction: column;
   /* border: 2px solid white; */
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   padding: 0 20px;
+  margin-top: 30px;
+
 }
 .vision-container .main-vision-container .vision-content {
   display: flex;
   /* align-items: flex-start; */
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   flex-direction: row;
   /* border: 2px solid green; */
@@ -187,7 +190,8 @@ html {
 /* ==================== Go Green Section ====================== */
 .gogreen-main-container {
   /* display: flex; */
-  height: 100vh;
+  min-height: 100vh;
+  max-height: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -216,10 +220,12 @@ html {
   content: "this is content";
 } */
 .gogreen-main-container .gogreen-container {
-  height: 70%;
+  min-height: 70%;
+  max-height: auto;
   width: 70%;
   border: 1px solid white;
   padding: 40px;
+  
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1px);
