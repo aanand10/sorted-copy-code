@@ -39,7 +39,7 @@
     height: 100%;
     width: 100%;
   }
-  .about-content *{
+  .about-content * {
     margin: 5px 0;
   }
   .about-container .main-container .about-content {
@@ -332,7 +332,7 @@
     top: 50%;
     height: auto;
   }
-  .sticky-social-icons .sticky-container .sticky-icons{
+  .sticky-social-icons .sticky-container .sticky-icons {
     margin: 15px 0;
   }
 
@@ -401,7 +401,7 @@
   }
 }
 /* +++++++++++++++++++ Small Display Phones ++++++++++++++++++++++ */
-@media screen and (max-width:360px){
+@media screen and (max-width: 360px) {
   .about-container {
     /* border: 1px solid red; */
     /* margin-bottom: 30px; */
@@ -409,25 +409,121 @@
     max-height: auto;
     /* margin-bottom: 50px; */
   }
-  .about-container .main-container .about-content p:nth-child(4){
+  .about-container .main-container .about-content p:nth-child(4) {
     /* border: 1px solid white; */
   }
-  .about-container .main-container .about-content{
+  .about-container .main-container .about-content {
     margin-top: 30px;
     min-height: 60vh;
     max-height: auto;
   }
-  .vision-container .main-vision-container .mission-content .test h2{
+  .vision-container .main-vision-container .mission-content .test h2 {
     padding: 15px;
   }
-  .reachus-main-container .reachus-content-container .reachus-container{
+  .reachus-main-container .reachus-content-container .reachus-container {
     margin: 30px 35px 30px 35px;
   }
-  .feedback .feedback-container .feedback-form .feedback-form-fields{
+  .feedback .feedback-container .feedback-form .feedback-form-fields {
     margin: 30px 0;
   }
-  .feedback{
+  .feedback {
     min-height: 105vh;
   }
-  }
+}
 
+/* ===================== Even smaller Display Screens ====================== */
+@media screen and (max-width: 330px) {
+  .about-container {
+    min-height: 100vh;
+  }
+  .about-container .main-container .about-image {
+    /* border: 1px solid white; */
+    height: 35vh;
+  }
+  .about-container .main-container .about-image img {
+    margin: 10px 0 0 0;
+  }
+  .about-container .main-container .about-content * {
+    margin: 3px 0;
+  }
+  .about-container .main-container .about-content h2 {
+    font-size: 25px;
+  }
+  .about-container .main-container .about-content h2:nth-child(2) {
+    font-size: 16px;
+  }
+  .about-container .main-container .about-content p {
+    font-size: 12px;
+  }
+  .vision-container .main-vision-container .vision-content .vision-text p {
+    font-size: 12px;
+  }
+  .vision-container .main-vision-container .mission-content .test p {
+    font-size: 12px;
+  }
+  .gogreen-main-container .gogreen-container p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  /* .reachus-main-container{
+    background-color: #000000;
+opacity: 0.8;
+background-image: radial-gradient(#ffffff 0.5px, #000000 0.5px);
+background-size: 10px 10px;
+  } */
+  .reachus-main-container
+    .reachus-content-container
+    .reachus-container
+    .reachus-icon
+    a
+    img {
+    height: 25px;
+    width: 25px;
+  }
+  .reachus-main-container .reachus-content-container .reachus-container {
+    margin: 0px 35px 30px 35px;
+  }
+  .gogreen-main-container .gogreen-container .span {
+    font-size: 16px;
+  }
+  .reachus-main-container
+    .reachus-content-container
+    .reachus-container
+    .reachus-socialmedia
+    a
+    img {
+    height: 25px;
+    width: 25px;
+  }
+  .reachus-main-container .reachus-content-container .reachus-container .reachus-text p{
+    font-size: 16px;
+  }
+  .feedback{
+    height: 110vh;
+  }
+  .feedback .feedback-container .image-container{
+    margin-top: 50px;
+  }
+  .feedback .feedback-container .feedback-form .title h2 {
+    font-size: 20px;
+  }
+  .feedback
+    .feedback-container
+    .feedback-form
+    .feedback-form-fields
+    #lable-field
+    input::placeholder {
+    font-size: 12px;
+  }
+  .feedback
+    .feedback-container
+    .feedback-form
+    .feedback-form-fields
+    #lable-field
+    input {
+    padding-top: 0.6rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.5rem;
+  }
+}
