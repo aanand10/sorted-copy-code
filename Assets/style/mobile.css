@@ -44,7 +44,7 @@
   } */
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
   body {
     padding: 0;
     margin: 0;
@@ -747,13 +747,17 @@
     height: 38px;
   } */
 }
-/*======================== for rare phones ============================== */
-@media only screen and (max-width: 470px) {
-}
 
 /* ========================= screen 360px ===================== */
 @media only screen and (max-width: 360px) {
   /* ========= hero page ======== */
+  .hero-section {
+    padding-top: 8.9vh;
+  }
+  .hero-section .main-container {
+    min-height: 78vh;
+    width: 86%;
+  }
   .hero-section .main-container .main-content-container .main-title {
     margin-bottom: 12px;
     font-size: 36px;
@@ -782,17 +786,41 @@
   .container button {
     margin-left: -12px;
   }
+  .hero-section .marquee-container a pre {
+    font-size: 25.16px;
+  }
+  .hero-section .marquee-container a pre span {
+    font-size: 22.7px;
+  }
   /* ===================== hero section =====================  */
   /* ===================== video and counter section  =====================  */
 
+  .video-counter {
+    max-width: 100%;
+    height: 106vh;
+    padding-bottom: 0;
+    /* border: 1px solid white; */
+  }
+  .video-counter .counter-container .counter-box p {
+    font-size: 13px;
+  }
+
   /* =================== questions and answer section ================ */
-  .question-answer .question-answer-title h2 {
+  .question-answer .cube-image-part-mobile {
+    min-height: 115vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .question-answer .cube-image-part-mobile .question-answer-title h2 {
     font-size: 30px;
   }
   .cube-image-part-mobile .question-answer-list li p {
     font-size: 14px;
   }
   /*======================== features section ==================  */
+
   .sorted-features .card-container .full-card .card-flip {
     width: 284px;
   }
@@ -812,15 +840,42 @@
 
   /* ===============
   process section ================ */
+  .sorted-hai .sorted-hai-mobile .sorted-hai-title {
+    height: 10vh;
+  }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content .content {
     margin: 37px 0;
   }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content h3 {
     font-weight: 450;
-    font-size: 13px;
+    font-size: 20px;
   }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content p {
     font-size: 10px !important;
+  }
+  .mobile-features {
+    display: flex;
+    height: 100vh;
+    /* border: 1px solid white; */
+  }
+  .mobile-features .carousel {
+    height: 437px;
+  }
+  .mobile-features .carousel {
+    margin-top: 30px;
+  }
+  /* =============== go green ================ */
+  .go-green .go-green-image-box {
+    height: 80vh;
+  }
+  .go-green .go-green-image-box .go-green-image-box-content * {
+    margin: 5px 0;
+  }
+  .go-green .go-green-image-box .go-green-image-box-content p {
+    font-size: 20px;
+  }
+  .go-green .go-green-image-box .go-green-image-box-content h2 {
+    font-size: 25px;
   }
   /* ================ pricing setion ============== */
   .pricing-mobile {
@@ -892,6 +947,21 @@
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
       inset 0 0 20px rgba(255, 255, 255, 0.5);
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
+  }
+
+  /* =============== searchbar ==========  */
+  .searchbar {
+    height: 90vh;
+  }
+  .searchbar .inner-box .bottom-box {
+    width: 100%;
+    height: 44%;
+  }
+  .searchbar .inner-box .bottom-box .bottom-box-heading {
+    font-size: 35px;
+  }
+  #pre-register-button {
+    font-size: 13px;
   }
   /* floating icon section  */
   .floating-icon {

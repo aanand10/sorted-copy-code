@@ -52,7 +52,8 @@ body {
   align-items: center;
 }
 .hero-section .main-container {
-  height: 75vh;
+  min-height: 75vh;
+  max-height: auto;
   width: 90%;
   /* border: 1px solid red; */
   display: flex;
@@ -300,19 +301,30 @@ body {
 }
 .video-counter .counter-container .counter-box h2 {
   font-size: 55px;
-  color: #393e46;
-  color: #00fff5;
-  text-shadow: 1.5px 1.5px #00adb5;
+  
+  color: var(--highlight-color);
+  color: #3d5ff8;
+  text-shadow: 1.5px 1.5px #848cdf42 ;
 }
 .video-counter .counter-container .counter-box p {
   font-size: 30px;
   color: #eeeeee;
+}
+.video-counter .video-container .video-container-text .subtitle-text, .subtitle-text {
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.video-counter .video-container .video-container-video iframe {
+ 
+  height: 168px;
 }
 
 /*=============================== Questions and answer section styling ================================== */
 .question-answer {
   width: 100%;
   min-height: 100vh;
+  max-height: auto;
   /* background-color: rgb(15, 15, 15); */
   /* background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%); */
   padding-left: 240px;
