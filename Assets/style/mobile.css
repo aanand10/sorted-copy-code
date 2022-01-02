@@ -950,6 +950,10 @@
   }
 
   /* =============== searchbar ==========  */
+  .hero-section .main-container {
+    min-height: 78vh;
+    width: 86%;
+  }
   .searchbar {
     height: 90vh;
   }
@@ -967,5 +971,52 @@
   .floating-icon {
     bottom: 15px;
     right: 15px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .mobile-features .title-box h2 {
+    font-size: 30px;
+  }
+  .mobile-features .carousel {
+    height: 390px;
+    width: 85vw;
+  }
+  .video-counter .video-container .video-container-text .text {
+    font-size: 16px;
+  }
+  .video-counter .video-container .video-container-text .title-text {
+    font-size: 24px;
+  }
+  .video-counter .video-container .video-container-text .subtitle-text,
+  .subtitle-text {
+    font-size: 16px;
+  }
+  .cube-image-part-mobile .question-answer-list {
+    padding: 50px 0;
+  }
+  .go-green .go-green-image-box {
+    height: 78vh;
+  }
+  .go-green .go-green-image-box .go-green-image-box-content p {
+    font-size: 16px;
+  }
+  .go-green .go-green-image-box .go-green-image-box-content a button {
+    margin: 5px;
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+  }
+  .searchbar .inner-box .search-box .search-bar button {
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+  }
+  #pre-register-button {
+    font-size: 12px;
   }
 }
