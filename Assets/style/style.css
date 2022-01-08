@@ -314,10 +314,9 @@ body {
   font-size: 20px;
   font-weight: 450;
 }
-
+/* ======== iframe tag style ============ */
 .video-counter .video-container .video-container-video iframe {
- 
-  height: 168px;
+  height:  285px;
 }
 
 /*=============================== Questions and answer section styling ================================== */
@@ -1257,13 +1256,13 @@ body {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
-  border: 1px solid #c0c0c0;
-  background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+  /* border: 1px solid #c0c0c0;
+  background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%); */
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
     inset 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
-.pricing .pricing-container .card-1:hover h3 {
+/* .pricing .pricing-container .card-1:hover h3 {
   color: #c0c0c0;
 }
 
@@ -1278,7 +1277,7 @@ body {
 }
 .pricing .pricing-container .card-1:hover ul li {
   color: #c0c0c0;
-}
+} */
 .pricing .pricing-container .card-2 {
   transition: transform ease-in 0.2s;
   -webkit-transition: transform ease-in 0.2s;
@@ -1295,12 +1294,12 @@ body {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
-  background-color: transparent;
+  /* background-color: transparent;
   border-color: #ffd700;
   background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
-  border: 1px solid #fdd017;
+  border: 1px solid #fdd017; */
 }
-.pricing .pricing-container .card-2:hover h3 {
+/* .pricing .pricing-container .card-2:hover h3 {
   color: #ffd700;
 }
 .pricing .pricing-container .card-2:hover h1 {
@@ -1314,10 +1313,10 @@ body {
 }
 .pricing .pricing-container .card-2:hover ul li {
   color: #ffd700;
-}
+}*/
 .pricing .pricing-container .card-3 {
   transition: transform 0.2s;
-}
+} 
 .pricing .pricing-container .card-3:hover {
   position: relative;
   z-index: 3;
@@ -1327,12 +1326,12 @@ body {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
-  background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
-  border: 1px solid #c0c0c0;
+  /* background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+  border: 1px solid #c0c0c0; */
   box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
     inset 0 0 20px rgba(255, 255, 255, 0.5);
 }
-
+/* 
 .pricing .pricing-container .card-3:hover h3 {
   color: #c0c0c0;
 }
@@ -1348,7 +1347,7 @@ body {
 }
 .pricing .pricing-container .card-3:hover ul li {
   color: #c0c0c0;
-}
+} */
 
 
 /* ============= mobile pricing style ================ */
