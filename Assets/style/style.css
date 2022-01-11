@@ -795,6 +795,9 @@ body {
   /*width: 285px;
   */width: 100%;
   padding: absolute;
+
+
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1367,13 +1370,10 @@ body {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.3);
-
   background: #2d405993;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 1px 1px 35px #eeeeee34;
   border: 0.7px solid #eeeeee7e;
   backdrop-filter: blur(9px);
-
-  /* background-color: var(--text-color); */
 }
 .pricing-mobile .gallery .pricing-card:nth-child(odd) {
   height: 55vh;
