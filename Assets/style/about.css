@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 html {
   scroll-behavior: smooth;
   font-family: "Source Sans Pro", sans-serif;
@@ -33,22 +33,29 @@ html {
   padding-top: 10vh;
 }
 .main-container {
-  height: 90vh;
+  height: auto;
   width: 100%;
 }
 .about-image {
   display: flex;
-  /* border: 2px solid green; */
-  height: 40vh;
+  /*border: 2px solid green;
+  */
+  height: 50vh;
   width: auto;
   position: relative;
   align-items: baseline;
-  justify-content: right;
+  justify-content: center;
 }
 .about-image img {
-  height: 55vh;
-  margin-right: 200px;
-  margin-top: -20px;
+  height: 50vh;
+  transform: scale(1);
+  /*margin-right: 200px;
+  */
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transform: scale(1);
 }
 .about-content {
   display: flex;
@@ -70,7 +77,6 @@ html {
   /* border: 2px solid red; */
   font-size: var(--title-text);
   /* margin: 10px; */
-  
 }
 .about-content p {
   /* border: 2px solid blue; */
@@ -80,7 +86,7 @@ html {
 
 .vision-container {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   max-height: auto;
   width: 100%;
 }
@@ -88,64 +94,67 @@ html {
   display: flex;
   flex-direction: column;
   /* border: 2px solid white; */
-  height: 110vh;
+  height: auto;
   width: 100%;
-  padding: 0 20px;
+  padding: 30px 20px;
   margin-top: 30px;
-
+  align-items: center;
+  /* background-color: #a7322c; */
 }
 .vision-container .main-vision-container .vision-content {
   display: flex;
-  /* align-items: flex-start; */
   height: 50vh;
   width: 100%;
   flex-direction: row;
+  padding: 0 10%;
   /* border: 2px solid green; */
   /* padding: 20px; */
   position: relative;
-  background-color: #a7322c;
+  background-color: #79a2ff;
   margin: 20px 0;
-  /* justify-content: center; */
-  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 30px;
 }
 .vision-container .main-vision-container .mission-content {
   display: flex;
-  /* flex-direction: column; */
-  justify-content: right;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 50vh;
-  /* width: 100%; */
-  /* border: 2px solid blue; */
-  /* padding: 20px; */
   width: 100%;
-  /* position: relative; */
-  /* right: -200px;
-    top: -200px; */
-  background-color: #a7322c;
+  background-color: #e64926;
+  /* border: 2px solid white; */
+  border-bottom-right-radius: 30px;
 }
 .vision-container .main-vision-container .vision-content .vision-text h2 {
-  padding: 30px;
+  padding: 15px;
   font-size: 50px;
+  /* border: 2px solid rgb(26, 201, 157); */
 }
 .vision-container .main-vision-container .vision-content .vision-text p {
-  font-size: 30px;
+  font-size: 24px;
   font-style: italic;
+  /* border: 2px solid rgb(255, 13, 13); */
 }
 .vision-container .main-vision-container .vision-content .vision-text {
-  /* border: 1px solid blue;   */
+  /* border: 1px solid blue; */
   width: 40%;
   height: 100%;
   text-align: center;
   padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .vision-container .main-vision-container .mission-content h2 {
   /* padding: 50px */
+  padding: 15px;
   font-size: 50px;
-  text-align: center;
 }
 .vision-container .main-vision-container .mission-content p {
-  font-size: 30px;
+  font-size: 24px;
   font-style: italic;
 }
 /* .vision-container .main-vision-container .mission-content p span:nth-child(2){
@@ -153,7 +162,7 @@ html {
 } */
 .vision-container .main-vision-container .mission-content .test {
   /* border: 2px solid white; */
-  width: 50%;
+  width: 40%;
   height: 100%;
   padding: 30px 15px;
 }
@@ -228,7 +237,7 @@ html {
   width: 70%;
   border: 1px solid white;
   padding: 40px;
-  
+
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1px);
@@ -249,12 +258,10 @@ html {
   /* border: 1px solid blue; */
 }
 .gogreen-main-container .gogreen-container .span {
-  font-size: 40px;
+  font-size: 27px;
   text-align: center;
-  /* align-items: center;
-  justify-content: center;
-  vertical-align: middle; */
-  padding-top: 5px;
+
+  padding-top: 10px;
 }
 
 /* =================== Reach Us Section ====================== */
@@ -616,4 +623,89 @@ html {
   /* color: black; */
   background: rgba(0, 0, 0, 0.02);
   border: solid 1px #72b0f2;
+}
+
+/* =========== faq section ============ */
+.FAQ {
+  height: auto;
+  /* border: 1px solid pink; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Accordion {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: auto;
+  /* border: 1px solid red; */
+  width: 50%;
+}
+.Accordion__tabs {
+  max-width: 600px;
+  list-style: none;
+}
+.Accordion__tab {
+  width: 100%;
+}
+.Accordion__tab__headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(248, 248, 248, 0.5);
+  transition: 0.2s ease all;
+  padding: 20px 15px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.Accordion__tab__headline:hover {
+  background-color: #607bba;
+}
+.Accordion__tab__headline > h4 {
+  user-select: none;
+  text-transform: uppercase;
+  margin: 0;
+}
+.Accordion__tab__headline .icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+  position: relative;
+}
+.Accordion__tab__headline .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 6px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.Accordion__tab__headline .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 10px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+  transition: 0.2s ease all;
+}
+.Accordion__tab__content {
+  overflow: hidden;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: 0;
+  transition: 0.4s ease all;
+}
+.Accordion__tab--open .Accordion__tab__headline .icon::after {
+  transform: scaleY(0);
+}
+
+.FAQ .faq-img-box img {
+  height: 80vh;
 }
