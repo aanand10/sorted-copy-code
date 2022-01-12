@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="Assets/style/style.css" />
   <link rel="stylesheet" href="Assets/style/nav-style.css" />
   <link rel="stylesheet" href="Assets/style/mobile.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- ---------------------- corosal style/js --------------------  -->
 <script src="jquery.min.js"></script>
 <link
@@ -46,13 +47,13 @@
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link active">Home</a>
+              <a href="index.html" class="nav__link active">Home</a>
             </li>
             <li class="nav__item">
-              <a href="About.html" class="nav__link">About</a>
+              <a href="About.html" class="nav__link ">About</a>
             </li>
             <li class="nav__item">
-              <a href="#searchbar" class="nav__link">Register</a>
+              <a href="FormPages/pre-register.html" class="nav__link">Register</a>
             </li>
             
             <!-- <li class="nav__item">
@@ -68,12 +69,49 @@
     <div class="main-container" id="main-container">
       <div class="main-content-container" id="main-content-container">
         
-        <h1 class="main-title">Think Career. Think Sort-Ed.</h1>
-        <h2 class="main-subtitle">A platform for all your <br> Educational needs.</h2>
-        <h3 class="main-text"> Explore The Universe Of Opportunities <br> Starting with a modern-age Textbook subscription platform</h3>
-        <a href="FormPages/pre-register.html"><button ><strong>Pre-Register Now</strong>  <img src="images/Icon awesome-arrow-right white.svg" alt=""> </button></a>
+        <h1 class="main-title" 
+        data-aos="fade-right"
+        data-aos-offset="50"
+       data-aos-delay="0"
+       data-aos-duration="450"
+       data-aos-easing="ease-in"
+       data-aos-mirror="true"
+       data-aos-once="false"
+       data-aos-anchor-placement="center">Think Career. Think Sort-Ed.</h1>
+        <h2 data-aos="fade-right"
+        data-aos-offset="50"
+       data-aos-delay="0"
+       data-aos-duration="500"
+       data-aos-easing="ease-in"
+       data-aos-mirror="true"
+       data-aos-once="false"
+       data-aos-anchor-placement="center" class="main-subtitle">A platform for all your <br> Educational needs.</h2>
+        <h3 data-aos="fade-right"
+        data-aos-offset="50"
+       data-aos-delay="0"
+       data-aos-duration="550"
+       data-aos-easing="ease-in"
+       data-aos-mirror="true"
+       data-aos-once="false"
+       data-aos-anchor-placement="center" class="main-text"> Explore The Universe Of Opportunities <br> Starting with a modern-age Textbook subscription platform</h3>
+        <a  href="FormPages/pre-register.html"><button  data-aos="zoom-in-right"
+          data-aos-offset="50"
+         data-aos-delay="0"
+         data-aos-duration="600"
+         data-aos-easing="ease-in"
+         data-aos-mirror="true"
+         data-aos-once="false"
+         data-aos-anchor-placement="center"><strong>Pre-Register Now</strong>  <img src="images/Icon awesome-arrow-right white.svg" alt=""> </button></a>
       </div>
-      <div class="main-content-image" id="main-content-image"><img src="images/hero image.svg" alt="Sort-ed hero container two boys image." class="main-image">
+      <div class="main-content-image" id="main-content-image">
+        <img data-aos="zoom-in"
+        data-aos-offset="50"
+       data-aos-delay="2"
+       data-aos-duration="500"
+       data-aos-easing="ease-in"
+       data-aos-mirror="true"
+       data-aos-once="false"
+       data-aos-anchor-placement="top-center" src="images/hero image.svg" alt="Sort-ed hero container two boys image." class="main-image">
       </div>
       </div>
     <div class="marquee-container" id="marquee-container">
@@ -148,7 +186,14 @@
         </h2>
       </div> -->
       <div class="cube-image-part-pc">
-        <img class="cube-image" src="images/que & ans.svg" alt="" />
+        <img data-aos="zoom-in"
+         data-aos-offset="50"
+        data-aos-delay="2"
+        data-aos-duration="500"
+        data-aos-easing="ease-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"  class="cube-image" src="images/que & ans.svg" alt="" />
         <div class="cube-image-text">
           <p class="question-1">Save Effect,Everything at </p>
           <p class="question-2">Making Pricey TextBooks </p>
@@ -160,10 +205,14 @@
           <p class="answers-4">100% AUTHENTIC</p>
           <!-- <p class="answers-5">.</p> -->
   
-          <img src="Assets/images/bulb.svg" alt="" class="icon icons-1" />
-          <img src="Assets/images/affordable.svg" alt="" class="icon icons-2" />
-          <img src="Assets/images/book.svg" alt="" class="icon icons-3" />
-          <img src="Assets/images/thumb.svg" alt="" class="icon icons-4" />
+          <img data-aos="slide-right" data-aos-offset="70" data-aos-delay="10"
+        data-aos-duration="700" data-aos-anchor-placement="center" src="Assets/images/bulb.svg" alt="" class="icon icons-1" />
+          <img data-aos="slide-left" data-aos-offset="70" data-aos-delay="10"
+        data-aos-duration="700" data-aos-anchor-placement="center" src="Assets/images/affordable.svg" alt="" class="icon icons-2" />
+          <img data-aos="slide-right"data-aos-offset="70" data-aos-delay="10"
+        data-aos-duration="700" data-aos-anchor-placement="center" src="Assets/images/book.svg" alt="" class="icon icons-3" />
+          <img data-aos="slide-left" data-aos-offset="70"data-aos-delay="10"
+        data-aos-duration="700" data-aos-anchor-placement="center" src="Assets/images/thumb.svg" alt="" class="icon icons-4" />
         </div>
       </div>
       <!-- <hr style="border-top: #eeeeee;"> -->
@@ -1120,6 +1169,10 @@ function loop(status) {
 
       //  ============== animated text ================== 
       
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
   <!-- <script>
