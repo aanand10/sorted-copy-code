@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="Assets/style/mobile.css" />
     <link rel="stylesheet" href="Assets/style/about.css" />
     <link rel="stylesheet" href="Assets/style/about-mobile.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- ====================== navbar ==================  -->
@@ -105,8 +106,9 @@
     </div>
 
     <!-- ======================= about body ========================== -->
-    <section class="about-container">
-      <div class="main-container">
+    <section class="about-container" >
+      <div class="main-container" data-aos="fade-up"
+      data-aos-anchor-placement="top-center" data-aos-duration="900">
         <div class="about-image" id="about-image">
           <img
             src="Assets/aboout-images/banner-svg-file.svg"
@@ -143,7 +145,8 @@
     <!-- ====================== Vision & Mission =============== -->
     <section class="vision-container">
       <div class="main-vision-container">
-        <div class="vision-content">
+        <div class="vision-content" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="900">
           <div class="vision-text">
             <h2>Our Vision</h2>
             <p>
@@ -159,7 +162,8 @@
             />
           </div>
         </div>
-        <div class="mission-content">
+        <div class="mission-content" data-aos="fade-up"
+        data-aos-anchor-placement="top-center" data-aos-duration="900">
           <div class="mission-image">
             <img
               src="Assets/aboout-images/mission.svg"
@@ -189,7 +193,8 @@
       </div>
     </section>
     <!-- =========================== Go Green Section ======== -->
-    <section class="gogreen-main-container" id="gogreen-main-container">
+    <section class="gogreen-main-container" id="gogreen-main-container" data-aos="fade-up"
+    data-aos-anchor-placement="top-center" data-aos-duration="900">
       <div class="gogreen-container">
         <!-- <div class="gogreen-content"> -->
         <h2>Lets Go Green</h2>
@@ -232,7 +237,8 @@
       </div>
     </section>
     <!-- =================== Reach Us Section ================ -->
-    <section class="reachus-main-container">
+    <section class="reachus-main-container" data-aos="fade-up"
+    data-aos-anchor-placement="top-center" data-aos-duration="900">
       <div class="reachus-content-container">
         <div class="reachus-container">
           <div class="reachus-title">
@@ -332,7 +338,8 @@
       </div>
     </div> -->
     <!-- =================== Feedback ================ -->
-    <section class="feedback" id="feedback">
+    <section class="feedback" id="feedback" data-aos="fade-up"
+    data-aos-anchor-placement="top-center" data-aos-duration="900">
       <div class="feedback-container">
         <div class="image-container">
           <img src="Assets/aboout-images/Feedback-amico.svg" alt="" />
@@ -394,7 +401,8 @@
       </div>
     </section>
     <!-- ============= FAQ image =============  -->
-    <section  class="FAQ">
+    <section  class="FAQ" data-aos="fade-up"
+    data-aos-anchor-placement="top-center" data-aos-duration="900">
       <div class="Accordion">
       <ul class="Accordion__tabs">
         <li class="Accordion__tab" onclick="toggleAccordion(this)">
@@ -613,5 +621,12 @@ function toggleAccordion(element) {
 }
 
 </script>
+  <!-- ============== animated text ==================  -->
+      
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
