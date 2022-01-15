@@ -19,14 +19,16 @@
   .about-container {
     /* border: 2px solid red; */
     /* height: 100vh; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: max-content;
+
     /* max-height: auto; */
     width: 100%;
     /* margin: 0; */
     padding-top: 7vh;
-    height: 100vh;
+    height: max-content;
     width: 100%;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
   }
   .about-container .main-container {
     margin: 0;
@@ -42,10 +44,11 @@
   .about-content * {
     margin: 5px 0;
   }
+
   .about-container .main-container .about-content {
     margin: 0px;
-    padding: 0 10px;
-    height: 60vh;
+    padding: 5vh 10px;
+    height: max-content;
   }
   .about-container .main-container .about-content h2:nth-child(2) {
     font-size: 20px;
@@ -61,6 +64,7 @@
     /* height: 88vh; */
     min-height: 88vh;
     max-height: auto;
+    padding-bottom: 2rem;
   }
   .vision-container .main-vision-container {
     display: flex;
@@ -69,12 +73,17 @@
   }
   .vision-container .main-vision-container .vision-content {
     /* border: 2px solid blue; */
-    min-height: 40vh;
-    max-height: auto;
+    /* min-height: 40vh; */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
   }
+
   .vision-container .main-vision-container .vision-content .vision-text {
-    width: 50%;
+    width: 95%;
     /* text-align: center; */
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,22 +107,20 @@
     padding: 0;
   }
   .vision-container .main-vision-container .mission-content {
+    /* border: 2px solid blue; */
+    /* min-height: 40vh; */
+    height: fit-content;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-height: 40vh;
-    max-height: auto;
+    flex-direction: column-reverse;
+    padding: 2rem 0;
   }
   .vision-container .main-vision-container .mission-content .test {
-    /* display: flex; */
-    /* flex-direction: column; */
-    padding: 0px 10px;
+    width: 95%;
+    /* text-align: center; */
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* border: 2px solid gray; */
   }
   .vision-container .main-vision-container .mission-content .test h2 {
     padding: 20px;
@@ -312,6 +319,19 @@
     .reachus-icon {
     margin-right: 2rem;
   }
+  /* ======================= FAQ ==================== */
+
+  .FAQ {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .FAQ .faq-img-box img {
+    height: 50vh;
+  }
+  .Accordion {
+    padding-top: 2rem;
+    width: 90%;
+  }
   /* ======================= Sticky Icons ==================== */
   .sticky-social-icons {
     transform: scale(0.6);
@@ -406,7 +426,7 @@
   .vision-container .main-vision-container .mission-content .test h2 {
     padding: 15px;
   }
-  .gogreen-main-container .gogreen-container{
+  .gogreen-main-container .gogreen-container {
     width: 90%;
     height: 90vh;
     overflow: scroll;

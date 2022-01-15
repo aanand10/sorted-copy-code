@@ -27,8 +27,9 @@ html {
 
 .about-container {
   display: flex;
-  min-height: 100vh;
+  min-height: max-content;
   width: 100%;
+  padding: 1rem 0;
   /* border: 2px solid white; */
   padding-top: 10vh;
 }
@@ -40,7 +41,8 @@ html {
   display: flex;
   /*border: 2px solid green;
   */
-  height: 50vh;
+  height: max-content;
+  padding: 1rem;
   width: auto;
   position: relative;
   align-items: baseline;
@@ -123,7 +125,7 @@ html {
   text-align: center;
   height: 50vh;
   width: 100%;
-  background-color: #e64926;
+  background-color: #eb5431;
   /* border: 2px solid white; */
   border-bottom-right-radius: 30px;
 }
