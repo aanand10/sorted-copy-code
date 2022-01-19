@@ -18,20 +18,33 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <!-- nav bar  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 <!-- <script src="Assets/js/carousel.js"></script> -->
 
 </head>
 
 <body>
-  <!-- navbar section -->
+  <!-- ====================== navbar ==================  -->
   <header class="header">
     <a href="#" class="header__logo">Sort-Ed</a>
 
-    <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+    <ion-icon
+      name="menu-outline"
+      class="header__toggle"
+      id="nav-toggle"
+    ></ion-icon>
 
     <nav class="nav" id="nav-menu">
       <div class="nav__content bd-grid">
-        <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+        <ion-icon
+          name="close-outline"
+          class="nav__close"
+          id="nav-close"
+        ></ion-icon>
 
         <div class="nav__perfil">
           <div class="nav__img">
@@ -57,13 +70,14 @@
             </li>
             
             <!-- <li class="nav__item">
-              <a href="#one" class="nav__link">Contact</a>
-            </li> -->
+                <a href="#one" class="nav__link">Contact</a>
+              </li> -->
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
   <!-- ============================= Hero section ============================= -->
   <section class="hero-section" id="hero-section">
     <div class="main-container" id="main-container">
@@ -196,7 +210,7 @@
              <img src="Assets/images/paisa.svg" alt="">
             </li>
             <li class="list-item">
-              <img src="Assets/images/my books new.svg" alt="">
+              <img src="Assets/images/mobile-cube-book.svg" alt="">
             </li>
   
             <li class="list-item">
@@ -851,6 +865,7 @@
             <div class="box-2">
               <a href="" class="box-2-link">Terms and Conditions</a>
               <a href="" class="box-2-link">Privacy Policy</a>
+              <a href="cr.html" class="box-2-link">Credits</a>
             </div>
           </div>
   
@@ -1114,35 +1129,9 @@ function loop(status) {
         document.body.appendChild(css);
       };
     
-    /*===== MENU SHOW Y HIDDEN =====*/
-      const navMenu = document.getElementById("nav-menu"),
-        toggleMenu = document.getElementById("nav-toggle"),
-        closeMenu = document.getElementById("nav-close");
-  
-      /*SHOW*/
-      toggleMenu.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
-      });
-  
-      /*HIDDEN*/
-      closeMenu.addEventListener("click", () => {
-        navMenu.classList.remove("show");
-      });
-  
-      /*===== ACTIVE AND REMOVE MENU =====*/
-      const navLink = document.querySelectorAll(".nav__link");
-  
-      function linkAction() {
-        /*Active link*/
-        navLink.forEach((n) => n.classList.remove("active"));
-        this.classList.add("active");
-  
-        /*Remove menu mobile*/
-        navMenu.classList.remove("show");
-      }
-      navLink.forEach((n) => n.addEventListener("click", linkAction));
+    
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(".btn").on("click", function () {
         $(".menu").toggleClass("show");
       });
@@ -1150,7 +1139,9 @@ function loop(status) {
 
       //  ============== animated text ================== 
       
-    </script>
+    </script> -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="Assets/js/navbar.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

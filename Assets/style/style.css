@@ -792,6 +792,9 @@ border: 1px solid #707070;
   /* border: #6176f1 3px solid; */
   height: 376px;
   background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+  background: linear-gradient(#5433ff 0%, #4a2de0 24.22%, #2a1a80 100%);
+border: 1px solid #707070;
+
 }
 .mobile-features .carousel .carousel-inner .full-card .card-flip {
   /*min-height: 80vh;
