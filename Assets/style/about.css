@@ -671,8 +671,8 @@ html {
   display: inline-block;
   width: 22px;
   height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
+  /* border: 1px solid;
+  border-radius: 22px; */
   position: relative;
 }
 .Accordion__tab__headline .icon::before {
