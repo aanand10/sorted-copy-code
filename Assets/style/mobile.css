@@ -680,7 +680,7 @@
     transition: all 0.2s ease-in;
     position: relative;
     overflow: hidden;
-    font-size: 17px;
+    font-size: 15px;
     color: var(--bg-color);
     z-index: 1;
     -webkit-border-radius: 10px;
